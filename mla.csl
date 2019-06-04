@@ -90,15 +90,15 @@
   <macro name="locators">
     <group delimiter=", ">
       <text macro="edition"/>
-      <group delimiter=" ">
+      <group delimiter="">
         <text term="volume" form="short" suffix="." strip-periods="true"/>
         <number variable="volume" form="numeric"/>
       </group>
-      <group delimiter=" ">
+      <group delimiter="">
         <number variable="number-of-volumes" form="numeric"/>
         <text term="volume" form="short" suffix="." plural="true" strip-periods="true"/>
       </group>
-      <group delimiter=", ">
+      <group delimiter="">
         <text term="issue" form="short" suffix="." strip-periods="true"/>
         <number variable="issue" form="numeric"/>
       </group>
@@ -192,7 +192,7 @@
   </macro>
   <macro name="page">
     <group>
-      <label variable="page" form="short" suffix=". " strip-periods="true"/>
+      <label variable="page" form="short" suffix="." strip-periods="true"/>
       <text variable="page"/>
     </group>
   </macro>
@@ -215,11 +215,12 @@
         <!-- Specific Formats -->
         <if type="article-journal">
           <group delimiter=" ">
-            <text macro="title" suffix=".&lt;br /&gt;"/>
-            <text macro="event" prefix="&lt;i&gt;" suffix="&lt;/i&gt;,"/>
-            <text macro="locators"/>
-            <text macro="page"/>
-            <text macro="issued"/>
+            <text display="block" macro="title"  suffix="."/>
+            <text display="block" macro="author" prefix="By " suffix="." />
+            <text macro="event" prefix="" suffix=", " font-weight="300"/>
+            <text macro="locators" suffix=", " font-weight="300"/>
+            <text macro="page" suffix=", " font-weight="300"/>
+            <text macro="issued" font-weight="300"/>
           </group>
         </if>
         <else-if type="paper-conference">
@@ -229,7 +230,7 @@
             <text display="block" macro="author" prefix="By " suffix="." />
             <text macro="event" prefix="" suffix=", " font-weight="300"/>
             <text macro="locators" suffix=", " font-weight="300"/>
-            <!--text macro="page" suffix=", " font-weight="300"/-->
+            <text macro="page" suffix=", " font-weight="300"/>
             <text macro="issued" font-weight="300"/>
           </group>
         </else-if>
