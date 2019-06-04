@@ -1,0 +1,100 @@
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Personal info
+name: Weiyu Liu
+title: Robotics PhD @ Georgia Tech
+email: wliu88 AT gatech Dot edu
+#phone: Your phone number (optional)
+#website: Your website (eg. https://google.com)(optional)
+
+# Social links
+#twitter_username: jekyllrb
+github_username:  wliu88
+#dribbble_username: jekyll
+facebook_username: WeiyuLiu69
+#flickr_username: jekyll
+#instagram_username: jekyll
+#linkedin_username: jekyll
+#xing_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#googleplus_username: +jekyll
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile.jpg # Directory of profile image (eg. images/profile.jpg)
+about_content: | # this will include new lines to allow paragraphs
+  I am a Robotics PhD student at Georgia Institute of Techonology, working with professor [Sonia Chernova](https://www.cc.gatech.edu/~chernova/).
+  My research focuses on ***Semantic Reasoning for Robotics***.
+  Specifically, I am interested in making robots that can operate in diverse and changing environments, such as such as hospitals and homes, by leveraging ***knowledge extraction***, ***representation***, and ***reasoning***.
+  I am currently developing methods for reasoning with large-scale knowledge bases.
+
+  Prior to joining the PhD program, I received my Bachelor's degree in Electrical Engineering from Georgia Tech.
+#
+#
+#  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things [<mark>like this</mark>](http://foobar.com).
+#
+#  You can even add paragraphs by using empty lines like this and add anything else markdown supports such as
+#    - Lists
+#    - Tables
+#    - Links
+#    - Images
+
+# Projects Section
+# projects_title: Publications #(Use this to override about projects section title)
+
+# Experience Section
+# experience_title: Experience #(Use this to override about experience section title)
+
+# Education Section
+# education_title: Education #(Use this to override about education section title)
+
+# More Section
+# more_title: A Little More About Me #(Use this to override about more section title)
+#more_content: | # this will include new lines to allow paragraphs
+#  *Situated Bayesian Reasoning Framework for Robots Operating in Diverse Everyday Environments*
+#
+#  In: International Symposium on Robotics Research (ISRR)
+#  [<mark>link</mark>](http://foobar.com)
+#  &nbsp;
+#  &nbsp;
+#
+#  This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+#
+#  Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+
+# Footer
+footer_show_references: false
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+scholar:
+  style: mla.csl
+  source: _bibliography
+  bibliography: references.bib
+  bibliography_template: bibtemplate
+  bibliography_list_tag: "ul"
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]

@@ -1,0 +1,12 @@
+<div class="container publications-container">
+  <h3>{{ site.publications_title | default: "Publications" }}</h3>
+  <h4>{{"Preprints"}}</h4>
+  {% bibliography --query @*[group=preprint] %}
+
+  <h4>{{"Conference and Journal Papers"}}</h4>
+  {% bibliography --query @*[group=conference-journal] %}
+
+  <h4>{{"Workshop Papers"}}</h4>
+  {% bibliography --query @*[group=workshop] %}
+
+</div>
