@@ -100,6 +100,11 @@
           Web: {% include a.html href=site.website %}{{ site.website | escape }}</a>
         </p>
       {%- endif -%}
+      {%- if site.google_scholar -%}
+        <p>
+          <a href={{site.google_scholar}}>Google Scholar</a>
+        </p>
+      {%- endif -%}
     </div>
   </div>
 </div>
