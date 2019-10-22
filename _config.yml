@@ -4,7 +4,7 @@ repository: Git repository where your resume will be hosted, only required if yo
 
 # Personal info
 name: Weiyu Liu
-title: Robotics PhD @ Georgia Tech
+title: Robotics Ph.D. @ Georgia Tech
 email: wliu88 AT gatech Dot edu
 #phone: Your phone number (optional)
 #website: Your website (eg. https://google.com)(optional)
@@ -28,9 +28,9 @@ facebook_username: WeiyuLiu69
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpg # Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  I am a Robotics PhD student at Georgia Institute of Techonology, working with professor [Sonia Chernova](https://www.cc.gatech.edu/~chernova/).
+  I am a Robotics Ph.D. student at Georgia Institute of Technology, working with professor [Sonia Chernova](https://www.cc.gatech.edu/~chernova/).
   My research focuses on ***Semantic Reasoning for Robotics***.
-  Specifically, I am interested in making robots that can operate in diverse and changing environments, such as hospitals and homes, by leveraging ***knowledge extraction***, ***representation***, and ***reasoning***.
+  Specifically, I am interested in designing reasoning frameworks for robots to operate in diverse and changing environments, such as hospitals and homes, by leveraging ***knowledge extraction***, ***representation***, and ***reasoning***.
   I am currently developing methods for large-scale knowledge base reasoning and semantic grasping.
 
   Prior to joining the PhD program, I received my Bachelor's degree in Electrical Engineering from Georgia Tech.
