@@ -3,39 +3,6 @@
 References
 ==========
 
-@inproceedings{liu2019path,
-  title={Path Ranking with Attention to Type Hierarchies},
-  author={<b>Weiyu Liu</b> and Angel Daruna and Zsolt Kira and Chernova, Sonia},
-  booktitle = {Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI)},
-  year={2020},
-  preprint = {https://arxiv.org/abs/1905.10799},
-  group = {conference-journal}
-}
-
-@inproceedings{BanerjeeISRR2019,
-title = {Taking Recoveries to Task: Recovery-Driven Development for Recipe-based Robot Tasks},
-author = {Siddhartha Banerjee* and Angel Daruna* and David Kent* and <b>Weiyu Liu*</b> and Jonathan Balloch and Abhinav Jain and Akshay Krishnan and Muhammad Asif Rana and Harish Ravichandar and Binit Shah and Nithin Shrivatsav and Sonia Chernova
-},
-link = {http://www.rail.gatech.edu/wp-content/uploads/2019/10/ISRR19_0060_FI-1.pdf},
-year = {2019},
-date = {2019-10-07},
-booktitle = {International Symposium on Robotics Research (ISRR)},
-abstract = {Robot task execution when situated in real-world environments is fragile. As such, robot architectures must rely on robust error recovery, adding non-trivial complexity to highly-complex robot systems. To handle this complexity in development, we introduce Recovery-Driven Development (RDD), an iterative task scripting process that facilitates rapid task and recovery development by leveraging hierarchical specification, separation of nominal task and recovery development, and situated testing. We validate our approach with our challenge-winning mobile manipulator software architecture developed using RDD for the FetchIt! Challenge at the IEEE 2019 International Conference on Robotics and Automation. We attribute the success of our system to the level of robustness achieved using RDD, and conclude with lessons learned for developing such systems.},
-keywords = {},
-pubstate = {forthcoming},
-tppubtype = {inproceedings},
-group = {conference-journal}
-}
-
-@article{Liu2019CAGECG,
-  title={CAGE: Context-Aware Grasping Engine},
-  author={<b>Weiyu Liu</b> and Angel Daruna and Sonia Chernova},
-  journal={arXiv preprint arXiv:1909.11142},
-  year={2019},
-  preprint = {https://arxiv.org/abs/1909.11142},
-  group = {preprint}
-}
-
 @article{daruna2019leveraging,
   title={Leveraging Semantics for Incremental Learning in Multi-Relational Embeddings},
   author={Angel Daruna and <b>Weiyu Liu</b> and Zsolt Kira and Chernova, Sonia},
@@ -45,18 +12,58 @@ group = {conference-journal}
   group = {preprint}
 }
 
-@conference{daruna2019robocse,
-title = {RoboCSE: Robot Common Sense Embedding},
-author = {Angel Daruna and <b>Weiyu Liu</b> and Zsolt Kira and Sonia Chernova},
-link = {https://arxiv.org/abs/1903.00412},
+@INPROCEEDINGS{Liu2019CAGE,
+author={<b>Weiyu Liu</b> and Angel Daruna and Sonia Chernova},
+booktitle={2020 International Conference on Robotics and Automation (ICRA)},
+title={CAGE: Context-Aware Grasping Engine},
+year={2020},
+month={May},
+preprint={https://arxiv.org/abs/1909.11142},
+pubstate={forthcoming},
+code={https://github.com/wliu88/rail_semantic_grasping},
+group = {conference-journal}
+}
+
+
+@inproceedings{liu2019path,
+  title={Path Ranking with Attention to Type Hierarchies},
+  author={<b>Weiyu Liu</b> and Angel Daruna and Zsolt Kira and Sonia Chernova},
+  booktitle = {Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI)},
+  year={2020},
+  month={February},
+  preprint = {https://arxiv.org/abs/1905.10799},
+  pubstate={forthcoming},
+  code={https://github.com/wliu88/AttentivePathRanking},
+  group = {conference-journal}
+}
+
+@inproceedings{BanerjeeISRR2019,
+title = {Taking Recoveries to Task: Recovery-Driven Development for Recipe-based Robot Tasks},
+author = {Siddhartha Banerjee* and Angel Daruna* and David Kent* and <b>Weiyu Liu*</b> and Jonathan Balloch and Abhinav Jain and Akshay Krishnan and Muhammad Asif Rana and Harish Ravichandar and Binit Shah and Nithin Shrivatsav and Sonia Chernova
+},
+preprint = {http://www.banerjs.com/pdf/banerjs_isrr2019.pdf},
 year = {2019},
-date = {2019-02-10},
-booktitle = {International Conference on Robotics and Automation (ICRA)},
-journal = {International Conference on Robotics and Automation (ICRA)},
-abstract = {Autonomous service robots require computational frameworks that allow them to generalize knowledge to new situations in a manner that models uncertainty while scaling to real-world problem sizes. The Robot Common Sense Embedding (RoboCSE) showcases a class of computational frameworks, multi-relational embeddings, that have not been leveraged in robotics to model semantic knowledge. We validate RoboCSE on a realistic home environment simulator (AI2Thor) to measure how well it generalizes learned knowledge about object affordances, locations, and materials. Our experiments show that RoboCSE can perform prediction better than a baseline that uses pre-trained embeddings, such as Word2Vec, achieving statistically significant improvements while using orders of magnitude less memory than our Bayesian Logic Network baseline. In addition, we show that predictions made by RoboCSE are robust to significant reductions in data available for training as well as domain transfer to MatterPort3D, achieving statistically significant improvements over a baseline that memorizes training data.},
+date = {2019-10-07},
+booktitle = {International Symposium on Robotics Research (ISRR)},
 keywords = {},
 pubstate = {forthcoming},
-tppubtype = {conference},
+tppubtype = {inproceedings},
+code={https://github.com/GT-RAIL/derail-fetchit-public},
+group = {conference-journal}
+}
+
+@INPROCEEDINGS{daruna2019robocse,
+author={Angel Daruna and <b>Weiyu Liu</b> and Zsolt Kira and Sonia Chernova},
+booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+title={RoboCSE: Robot Common Sense Embedding},
+year={2019},
+pages={9777-9783},
+keywords={belief networks;embedded systems;home automation;mobile robots;service robots;statistical analysis;RoboCSE;robot common sense embedding;autonomous service robots;semantic knowledge;AI2Thor;statistical significant;home environment simulator;Word2Vec;Bayesian logic network;MatterPort3D;Semantics;Training;Robot sensing systems;Cognition;Computational modeling;Training data},
+doi={10.1109/ICRA.2019.8794070},
+ISSN={1050-4729},
+month={May},
+link={https://ieeexplore.ieee.org/abstract/document/8794070},
+preprint={https://arxiv.org/abs/1903.00412},
 group = {conference-journal}
 }
 
@@ -69,12 +76,22 @@ year = {2018},
 date = {2018-03-26},
 booktitle = {AAAI Spring Symposium Series 2018 on Integrating Representation, Reasoning, Learning, and Execution for Goal Directed Autonomy},
 pages = {516-524},
-abstract = {General-purpose robots operating in a variety of environments, such as homes or hospitals, require a way to integrate abstract knowledge that is generalizable across domains with local, domain-specific observations. In this work, we examine different types and sources of data, with the goal of understanding how locally observed data and abstract knowledge might be fused. We introduce the Situated Robot Knowledge (SiRoK) framework that integrates probabilistic abstract knowledge and semantic memory of the local environment. In a series of robot and simulation experiments we examine the tradeoffs in the reliability and generalization of both data sources. Our robot experiments show that the variability of object properties and locations in our knowledge base is indicative of the time it takes to generalize a concept and its validity in the real world. The results of our simulations back that of our robot experiments, and give us insights into which source of knowledge to use for 31 types of object classes that exist in the real world.},
-keywords = {},
-pubstate = {published},
 tppubtype = {inproceedings},
-link = {http://www.rail.gatech.edu/wp-content/uploads/2018/04/SIRLE18_compendium.pdf},
+link = {https://www.aaai.org/ocs/index.php/SSS/SSS18/paper/view/17517},
 group = {workshop}
+}
+
+@InProceedings{Chernova2019ISRR,
+author={Sonia Chernova and Vivian Chu and Angel Daruna and Haley Garrison and Meera Hahn and Priyanka Khante and <b>Weiyu Liu</b> and Andrea Thomaz},
+editor={Amato, Nancy M. and Hager, Greg and Thomas, Shawna and Torres-Torriti, Miguel},
+title={Situated Bayesian Reasoning Framework for Robots Operating in Diverse Everyday Environments},
+booktitle={Robotics Research},
+year={2020},
+publisher={Springer International Publishing},
+pages={353--369},
+isbn={978-3-030-28619-4},
+link={https://link.springer.com/chapter/10.1007/978-3-030-28619-4_29},
+group = {conference-journal}
 }
 
 @article{yao2019autonomous,
@@ -88,19 +105,4 @@ group = {workshop}
   publisher={Springer},
   link={https://link.springer.com/article/10.1631/FITEE.1800587},
   group = {conference-journal}
-}
-
-@inproceedings{ChernovaISRR2017,
-title = {Situated Bayesian Reasoning Framework for Robots Operating in Diverse Everyday Environments},
-author = {Sonia Chernova and Vivian Chu and Angel Daruna and Haley Garrison and Meera Hahn and
-Priyanka Khante and <b>Weiyu Liu</b> and Andrea Thomaz},
-link = {http://www.rail.gatech.edu/wp-content/uploads/2018/04/ISRR2017.pdf},
-year = {2017},
-date = {2017-12-11},
-booktitle = {International Symposium on Robotics Research (ISRR)},
-abstract = {General-purpose robots operating in unstructured environments, such as homes or hospitals, require a way to integrate abstract knowledge that is generalizable across domains with local, domain-specific observations. This paper details the implementation of a high-level knowledge representation to perform commonsense reasoning for robotic applications, and a software architecture for its use in robot task execution. We represent semantic knowledge using a Bayesian Logic Network, and demonstrate its use in both abstract and situated robot tasks, showing that we can predict object locations and properties with high accuracy even when the robot is introduced for the first time into a new environment. },
-keywords = {},
-pubstate = {forthcoming},
-tppubtype = {inproceedings},
-group = {conference-journal}
 }
