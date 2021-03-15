@@ -84,12 +84,89 @@
             </td>
           </tr>
 
+          <tr onmouseout="kg_task_stop()" onmouseover="kg_task_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='kg_task_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/kg_task.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/kg_task.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function kg_task_start() {
+                  document.getElementById('kg_task_image').style.opacity = "1";
+                }
+
+                function kg_task_stop() {
+                  document.getElementById('kg_task_image').style.opacity = "0";
+                }
+                kg_task_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Towards Robust One-shot Task Execution using Knowledge Graph Embeddings</papertitle>
+              </a>
+              <br>
+              <br>
+              <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
+              <a href="https://sites.google.com/site/lvnair93/">Lakshmi Nair</a>,
+              <strong>Weiyu Liu</strong>,
+              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
+              <br>
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2021
+              <br>
+              <a href="data/DarunaICRA2021.bib">bibtex</a>
+            </td>
+          </tr>
+
+          <tr onmouseout="affkpnet_stop()" onmouseover="affkpnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='affkpnet_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/affkpnet.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/affkpnet.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function affkpnet_start() {
+                  document.getElementById('affkpnet_image').style.opacity = "1";
+                }
+
+                function affkpnet_stop() {
+                  document.getElementById('affkpnet_image').style.opacity = "0";
+                }
+                affkpnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9364360">
+                <papertitle>An Affordance Keypoint Detection Network for Robot Manipulation</papertitle>
+              </a>
+              <br>
+              <br>
+              <a href="https://scholar.google.com/citations?user=qy644T4AAAAJ&hl=en">Ruinian Xu</a>,
+              <a href="https://fujenchu.github.io/">Fu-Jen Chu</a>,
+              <a href="https://scholar.google.com/citations?user=hXGhWsUAAAAJ&hl=zh-CN">Chao Tang</a>,
+              <strong>Weiyu Liu</strong>,
+              <a href="https://pvela.gatech.edu/">Patricio Vela</a>
+              <br>
+              <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2021
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9364360">link</a> /
+              <a href="https://github.com/ivalab/AffKpNet">code & data</a> /
+              <a href="data/XuRAL2021.bib">bibtex</a>
+            </td>
+          </tr>
+
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/sodg.png" alt="png" width="160" style="border-style: none">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="data/Same_Object_Different_Grasps.pdf">
+              <a href="https://arxiv.org/abs/2011.06431">
                 <papertitle>Same Object, Different Grasps: Data and Semantic Knowledge for Task-Oriented Grasping</papertitle>
               </a>
               <br>
