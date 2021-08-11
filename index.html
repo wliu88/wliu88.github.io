@@ -84,6 +84,47 @@
             </td>
           </tr>
 
+          <tr onmouseout="link_stop()" onmouseover="link_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='link_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/link.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/link.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function link_start() {
+                  document.getElementById('link_image').style.opacity = "1";
+                }
+
+                function link_stop() {
+                  document.getElementById('link_image').style.opacity = "0";
+                }
+                link_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://www.roboticsproceedings.org/rss17/p035.html">
+                <papertitle>Learning Instance-Level N-Ary Semantic Knowledge At Scale For Robots Operating in Everyday Environments
+</papertitle>
+              </a>
+              <br>
+              <br>
+              <strong>Weiyu Liu</strong>,
+              <a href="https://scholar.google.com/citations?user=uUTLG2IAAAAJ&hl=en">Dhruva Bansal</a>,
+              <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
+              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
+              <br>
+              <em>Robotics: Science and Systems (RSS)</em>, 2021
+              <br>
+              <a href="http://www.roboticsproceedings.org/rss17/p035.html">paper</a> /
+              <a href="https://github.com/wliu88/LINK">code & data</a> /
+              <a href="https://youtu.be/uFxXQxOuTlo">talk</a> /
+              <a href="data/LiuRSS2021.bib">bibtex</a>
+            </td>
+          </tr>
+
           <tr onmouseout="kg_task_stop()" onmouseover="kg_task_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -105,7 +146,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="">
+              <a href="https://arxiv.org/abs/2105.04484">
                 <papertitle>Towards Robust One-shot Task Execution using Knowledge Graph Embeddings</papertitle>
               </a>
               <br>
@@ -117,6 +158,7 @@
               <br>
               <em>International Conference on Robotics and Automation (ICRA)</em>, 2021
               <br>
+              <a href="https://arxiv.org/abs/2105.04484">arxiv</a> /
               <a href="data/DarunaICRA2021.bib">bibtex</a>
             </td>
           </tr>
@@ -155,15 +197,31 @@
               <br>
               <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2021
               <br>
-              <a href="https://ieeexplore.ieee.org/abstract/document/9364360">link</a> /
+              <a href="https://ieeexplore.ieee.org/abstract/document/9364360">paper</a> /
               <a href="https://github.com/ivalab/AffKpNet">code & data</a> /
               <a href="data/XuRAL2021.bib">bibtex</a>
             </td>
           </tr>
 
-          <tr>
+          <tr onmouseout="kbgrasp_stop()" onmouseover="kbgrasp_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/sodg.png" alt="png" width="160" style="border-style: none">
+              <div class="one">
+                <div class="two" id='kbgrasp_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/kbgrasp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/kbgrasp.jpg' width="161">
+              </div>
+              <script type="text/javascript">
+                function kbgrasp_start() {
+                  document.getElementById('kbgrasp_image').style.opacity = "1";
+                }
+
+                function kbgrasp_stop() {
+                  document.getElementById('kbgrasp_image').style.opacity = "0";
+                }
+                kbgrasp_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2011.06431">
@@ -298,7 +356,7 @@
               <br>
               <em>International Symposium on Robotics Research (ISRR)</em>, 2019
               <br>
-              <a href="http://www.banerjs.com/pdf/banerjs_isrr2019.pdf">link</a> /
+              <a href="http://www.banerjs.com/pdf/banerjs_isrr2019.pdf">paper</a> /
               <a href="https://github.com/GT-RAIL/derail-fetchit-public">code</a> /
               <a href="data/BanerjeeISRR2019.bib">bibtex</a>
               <!--<a href="data/B3DO_ICCV_2011.bib">bibtex</a> /-->
@@ -384,7 +442,7 @@
               <br>
               <em>Frontiers of Information Technology & Electronic Engineering</em>, 2019
               <br>
-              <a href="https://link.springer.com/article/10.1631/FITEE.1800587">link</a> /
+              <a href="https://link.springer.com/article/10.1631/FITEE.1800587">paper</a> /
               <a href="data/YaoFrontiers2019.bib">bibtex</a>
             </td>
           </tr>
@@ -410,7 +468,7 @@
               <br>
               <em>AAAI Spring Symposium Series (AAAI-SSS)</em>, 2018
               <br>
-              <a href="https://www.aaai.org/ocs/index.php/SSS/SSS18/paper/view/17517">link</a> /
+              <a href="https://www.aaai.org/ocs/index.php/SSS/SSS18/paper/view/17517">paper</a> /
               <a href="data/ChernovaAAAISSS2018.bib">bibtex</a>
             </td>
           </tr>
@@ -452,7 +510,7 @@
               <br>
               <em>International Symposium on Robotics Research (ISRR)</em>, 2017
               <br>
-              <a href="https://link.springer.com/chapter/10.1007/978-3-030-28619-4_29">link</a> /
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-28619-4_29">paper</a> /
               <a href="data/ChernovaISRR2017.bib">bibtex</a>
             </td>
           </tr>
