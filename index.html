@@ -107,6 +107,72 @@
             </td>
           </tr>
 
+          <tr onmouseout="structdiffusion_stop()" onmouseover="structdiffusion_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='structdiffusion_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/structdiffusion.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/structdiffusion.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function structdiffusion_start() {
+                  document.getElementById('structdiffusion_image').style.opacity = "1";
+                }
+
+                function structdiffusion_stop() {
+                  document.getElementById('structdiffusion_image').style.opacity = "0";
+                }
+                structdiffusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2211.04604">
+                <papertitle>StructDiffusion: Language-Guided Creation of Physically-Valid Structures using Unseen Objects</papertitle>
+              </a>
+              <br>
+              <br>
+              <strong>Weiyu Liu</strong>,
+              <a href="https://yilundu.github.io/">Yilun Du</a>,
+              <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
+              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>,
+              <a href="https://cpaxton.github.io/about/">Chris Paxton</a>
+              <br>
+              <em>Robotics: Science and Systems (RSS)</em>, 2023
+              <br>
+              <em>CoRL Workshop on Language and Robot Learning</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2211.04604">arxiv</a> /
+              <a href="https://github.com/StructDiffusion/StructDiffusion">code & data</a> /
+              <a href="https://structdiffusion.github.io/">website</a> /
+              <a href="data/structdiffusion.bib">bibtex</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/survey.jpg" alt="survey_png" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">
+                <papertitle>A Survey of Semantic Reasoning Frameworks for Robotic Systems</papertitle>
+              </a>
+              <br>
+              <br>
+              <strong>Weiyu Liu<sup>1</sup></strong>,
+              <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna<sup>1</sup></a>,
+              <a href="https://maithili.github.io/">Maithili Patel<sup>2</sup></a>,
+              <a href="https://kartikvrama.github.io/">Kartik Ramachandruni<sup>2</sup></a>,
+              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
+              <br>
+              <em>Robotics and Autonomous Systems</em>, 2023
+              <br>
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">paper</a> /
+              <a href="data/LiuSurvey2023.bib">bibtex</a>
+            </td>
+          </tr>
+
           <tr onmouseout="eRD_stop()" onmouseover="eRD_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -169,72 +235,6 @@
               <a href="https://github.com/mkt1412/GraspGPT_public">code & data</a> /
               <a href="https://sites.google.com/view/graspgpt/">website</a> /
               <a href="data/graspgpt.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/survey.jpg" alt="survey_png" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">
-                <papertitle>A Survey of Semantic Reasoning Frameworks for Robotic Systems</papertitle>
-              </a>
-              <br>
-              <br>
-              <strong>Weiyu Liu<sup>1</sup></strong>,
-              <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna<sup>1</sup></a>,
-              <a href="https://maithili.github.io/">Maithili Patel<sup>2</sup></a>,
-              <a href="https://kartikvrama.github.io/">Kartik Ramachandruni<sup>2</sup></a>,
-              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
-              <br>
-              <em>Robotics and Autonomous Systems</em>, 2023
-              <br>
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">paper</a> /
-              <a href="data/LiuSurvey2023.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <tr onmouseout="structdiffusion_stop()" onmouseover="structdiffusion_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='structdiffusion_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/structdiffusion.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/structdiffusion.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function structdiffusion_start() {
-                  document.getElementById('structdiffusion_image').style.opacity = "1";
-                }
-
-                function structdiffusion_stop() {
-                  document.getElementById('structdiffusion_image').style.opacity = "0";
-                }
-                structdiffusion_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2211.04604">
-                <papertitle>StructDiffusion: Language-Guided Creation of Physically-Valid Structures using Unseen Objects</papertitle>
-              </a>
-              <br>
-              <br>
-              <strong>Weiyu Liu</strong>,
-              <a href="https://yilundu.github.io/">Yilun Du</a>,
-              <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
-              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>,
-              <a href="https://cpaxton.github.io/about/">Chris Paxton</a>
-              <br>
-              <em>Robotics: Science and Systems (RSS)</em>, 2023
-              <br>
-              <em>CoRL Workshop on Language and Robot Learning</em>, 2022
-              <br>
-              <a href="https://arxiv.org/abs/2211.04604">arxiv</a> /
-              <a href="https://github.com/StructDiffusion/StructDiffusion">code & data</a> /
-              <a href="https://structdiffusion.github.io/">website</a> /
-              <a href="data/structdiffusion.bib">bibtex</a>
             </td>
           </tr>
 
