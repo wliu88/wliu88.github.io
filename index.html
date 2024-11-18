@@ -36,10 +36,18 @@
                 Prior to joining the Ph.D. program, I received my Bachelor’s degree in Electrical Engineering from Georgia Tech.
               </p>
               <p>
-                My goal is to develop robots that can effectively perceive, model, and interact with objects in the real world. Towards this goal, I study the representation and reasoning of semantic knowledge, which can concisely describe target domains with symbols and reveal meaningful patterns shared between problems and environments (e.g., clean cups are likely to be found in kitchen cabinets) . My research develops semantic reasoning frameworks capable of modeling complex semantic knowledge grounded in robot perception and action.</p>
+                The goal of my research is to develop robots that can effectively perceive, model, and interact with the real world.
+                I am particularly interested in the application where human users can easily command robots to complete long-horizon tasks via simple language commands, such as "make the tea".
+                Achieving this requires robust generalization across various dimensions, including objects, environments, actions, and tasks.
+                My core insight is that strong generalization can be achieved through a structured representation of world knowledge.
+                Rather than constructing this representation from scratch, robots should leverage the rich knowledge embedded in human language, grounding it through interactions with their environments to connect abstract knowledge to their sensorimotor capabilities.
+              </p>
+              <p>
+                My prior research has investigated core components of this structured knowledge representation, methods to extract and refine this knowledge extracted from humans, and algorithms that enable reasoning with this knowledge to support broad generalization.
+              </p>
               <p style="text-align:center">
                 <a href="mailto:weiyul@stanford.edu">Email</a> &nbsp/&nbsp
-                <a href="data/WeiyuLiu-CV.pdf">CV (Sep 2023)</a> &nbsp/&nbsp
+                <a href="data/CV-WeiyuLiu.pdf">CV (Nov 2024)</a> &nbsp/&nbsp
                 <a href="data/WeiyuLiu-ResearchStatement.pdf">Research Statement (2022)</a> <br>
                 <a href="https://scholar.google.com/citations?user=PHi0YEQAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/wliu88">Github</a> &nbsp/&nbsp
@@ -65,6 +73,222 @@
           <!--</tr>-->
         <!--</tbody></table>-->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="blade_stop()" onmouseover="blade_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='blade_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/blade.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/blade.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function blade_start() {
+                  document.getElementById('blade_image').style.opacity = "1";
+                }
+
+                function blade_stop() {
+                  document.getElementById('blade_image').style.opacity = "0";
+                }
+                blade_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://blade-bot.github.io/">
+                <papertitle>Learning Compositional Behaviors from Demonstration and Language</papertitle>
+              </a>
+              <br>
+              <br>
+              <strong>Weiyu Liu*</strong>,
+              <a href="https://neilnie.com/">Neil Nie*</a>,
+              <a href="https://ai.stanford.edu/~zharu/">Ruohan Zhang</a>,
+              <a href="https://jiayuanm.com/">Jiayuan Mao<sup>†</sup></a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu<sup>†</sup></a>
+              <br>
+              <em>Conference on Robot Learning (CoRL)</em>, 2024
+              <br>
+              <a href="https://openreview.net/forum?id=fR1rCXjCQX&noteId=fR1rCXjCQX">paper</a> /
+              <a href="https://blade-bot.github.io/">website</a> /
+              <a href="data/blade.bib">bibtex</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/parl.png" alt="planning_abstractions_png" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://parl2024.github.io/">
+                <papertitle>Learning Planning Abstractions from Language</papertitle>
+              </a>
+              <br>
+              <br>
+              <strong>Weiyu Liu*</strong>,
+              <a href="https://jc043.github.io/">Geng Chen*</a>,
+              <a href="https://stanford.edu/~joycj/">Joy Hsu</a>,
+              <a href="https://jiayuanm.com/">Jiayuan Mao<sup>†</sup></a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu<sup>†</sup></a>
+              <br>
+              <em>International Conference on Learning Representations (ICLR)</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2405.03864">arxiv</a> /
+              <a href="https://parl2024.github.io/">website</a> /
+              <a href="data/parl.bib">bibtex</a>
+            </td>
+          </tr>
+          <tr onmouseout="ikea_stop()" onmouseover="ikea_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ikea_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/ikea.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/ikea.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function ikea_start() {
+                  document.getElementById('ikea_image').style.opacity = "1";
+                }
+
+                function ikea_stop() {
+                  document.getElementById('ikea_image').style.opacity = "0";
+                }
+                ikea_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://yunongliu1.github.io/ikea-video-manual/">
+                <papertitle>IKEA Manuals at Work: 4D Grounding of Assembly Instructions on Internet Videos</papertitle>
+              </a>
+              <br>
+              <br>
+              <a href="https://yunongliu.com/">Yunong Liu</a>,
+              <a href="https://ceyzaguirre4.github.io/">Cristobal Eyzaguirre</a>,
+              <a href="https://www.niebles.net/">Juan Carlos Niebles</a>,
+              <a href="https://scholar.google.com/citations?user=iNT6NOAAAAAJ&hl=en">Vineeth Ravi</a>,
+              <a href="https://sites.google.com/site/saumitramishrac4dm">Saumitra Mishra</a>,
+              <strong>Weiyu Liu<sup>†</sup></strong>,
+              <a href="https://jiajunwu.com/">Jiajun Wu<sup>†</sup></a>
+              <br>
+              <em>Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track</em>, 2024
+              <br>
+              <a href="https://openreview.net/forum?id=EXwf5iE98P#discussion">paper</a> /
+              <a href="https://yunongliu1.github.io/ikea-video-manual/">website</a> /
+              <a href="https://github.com/yunongLiu1/IKEA-Manuals-at-Work">code and data</a> /
+              <a href="data/ikea.bib">bibtex</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/larc.png" alt="3d_visual_grounding_png" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://chunfeng3364.github.io/projects/larc_website/project_page.html">
+                <papertitle>Naturally Supervised 3D Visual Grounding with Language-Regularized Concept Learners</papertitle>
+              </a>
+              <br>
+              <br>
+              <a href="https://chunfeng3364.github.io/">Chun Feng*</a>,
+              <a href="https://stanford.edu/~joycj/">Joy Hsu*</a>,
+              <strong>Weiyu Liu</strong>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>
+              <br>
+              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2404.19696">paper</a> /
+              <a href="https://chunfeng3364.github.io/projects/larc_website/project_page.html">website</a> /
+              <a href="https://github.com/chunfeng3364/LARC">code</a>
+              <a href="data/larc.bib">bibtex</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/eai.png" alt="embodied_agent_interface_png" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://embodied-agent-interface.github.io/">
+                <papertitle>Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making</papertitle>
+              </a>
+              <br>
+              <br>
+              <a href="https://limanling.github.io/">Manling Li*</a>,
+              <a href="https://shiyu-zhao.netlify.app/">Shiyu Zhao*</a>,
+              <a href="https://qinengwang-aiden.github.io/">Qineng Wang*</a>,
+              <a href="https://jameskrw.github.io/">Kangrui Wang*</a>,
+              <a href="https://bryanzhou008.github.io/">Yu Zhou*</a>,
+              <a href="https://www.linkedin.com/in/sanjana-srivastava5/">Sanjana Srivastava</a>,
+              <a href="https://www.cemgokmen.com/">Cem Gokmen</a>,
+              <a href="https://profiles.stanford.edu/tonyhlee">Tony Lee</a>,
+              <a href="https://www.cs.columbia.edu/~lierranli/">Li Erran Li</a>,
+              <a href="https://ai.stanford.edu/~zharu/">Ruohan Zhang</a>,
+              <strong>Weiyu Liu</strong>,
+              <br>
+              <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>,
+              <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>,
+              <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>
+              <br>
+              <em>Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2410.07166">paper</a> /
+              <a href="https://embodied-agent-interface.github.io/">website</a> /
+              <a href="https://github.com/embodied-agent-interface/embodied-agent-interface">code</a> /
+              <a href="data/eai">bibtex</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/marple.png" alt="marple_png" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://marple-benchmark.github.io/">
+                <papertitle>MARPLE: A Benchmark for Long-Horizon Inference</papertitle>
+              </a>
+              <br>
+              <br>
+              <a href="https://www.linkedin.com/in/emily-jin-020/">Emily Jin</a>,
+              <a href="https://www.linkedin.com/in/zhuoyi-huang/">Zhuoyi Huang</a>,
+              <a href="https://janphilippfranken.github.io/">Jan-Philipp Fränken</a>,
+              <strong>Weiyu Liu</strong>,
+              <a href="https://www.hannahcha.com/about">Hannah Cha</a>,
+              <a href="https://sarahawu.github.io/">Sarah A. Wu</a>,
+              <a href="https://www.erikbrockbank.com/">Erik Brockbank</a>,
+              <a href="https://ai.stanford.edu/~zharu/">Ruohan Zhang</a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>,
+              <a href="https://cicl.stanford.edu/member/tobias_gerstenberg/">Tobias Gerstenberg</a>
+              <br>
+              <em>Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2410.01926">arxiv</a> /
+              <a href="https://marple-benchmark.github.io/">website</a> /
+              <a href="https://github.com/marple-benchmark/marple">code and data</a> /
+              <a href="data/marple.bib">bibtex</a>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/survey.jpg" alt="survey_png" width="160" style="border-style: none">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">
+                <papertitle>A Survey of Semantic Reasoning Frameworks for Robotic Systems</papertitle>
+              </a>
+              <br>
+              <br>
+              <strong>Weiyu Liu<sup>1</sup></strong>,
+              <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna<sup>1</sup></a>,
+              <a href="https://maithili.github.io/">Maithili Patel<sup>2</sup></a>,
+              <a href="https://kartikvrama.github.io/">Kartik Ramachandruni<sup>2</sup></a>,
+              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
+              <br>
+              <em>Robotics and Autonomous Systems</em>, 2023
+              <br>
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">paper</a> /
+              <a href="data/LiuSurvey2023.bib">bibtex</a>
+            </td>
+          </tr>
 
           <tr onmouseout="cpm_stop()" onmouseover="cpm_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -101,7 +325,7 @@
               <br>
               <em>Conference on Robot Learning (CoRL)</em>, 2023
               <br>
-              <a href="https://openreview.net/forum?id=o-K3HVUeEw">paper</a> /
+              <a href="https://arxiv.org/abs/2405.05876">arxiv</a> /
               <a href="https://sites.google.com/view/part-based-manipulation">website</a> /
               <a href="data/cpm.bib">bibtex</a>
             </td>
