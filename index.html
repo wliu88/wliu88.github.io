@@ -1,105 +1,284 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>-->
-  <!--<script>-->
-    <!--window.dataLayer = window.dataLayer || [];-->
-    <!--function gtag(){dataLayer.push(arguments);}-->
-    <!--gtag('js', new Date());-->
-
-    <!--gtag('config', 'UA-7580334-2');-->
-  <!--</script>-->
-
-  <title>Weiyu Liu</title>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Weiyu Liu">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+
+  <!-- Your external CSS -->
+  <link rel="stylesheet" href="styles.css">
   
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/buzz.png">
+  
+  <title>Weiyu Liu</title>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Weiyu Liu</name>
-              </p>
-              <p>
-                I am a Postdoctoral Scholar working with <a href="https://jiajunwu.com/">Jiajun Wu</a> in the CogAI group and <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab (SVL)</a>. I completed my Ph.D. in robotics at Georgia Institute of Technology, where I am advised by <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>.
-                In 2021 and 2022, I interned at Nvidia Research, working with <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>, <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>, <a href="https://animesh.garg.tech/">Animesh Garg</a>, and <a href="https://cpaxton.github.io/about/">Chris Paxton</a>.
-                Prior to joining the Ph.D. program, I received my Bachelor’s degree in Electrical Engineering from Georgia Tech.
-              </p>
-              <p>
-                The goal of my research is to develop robots that can effectively perceive, model, and interact with the real world.
-                I am particularly interested in the application where human users can easily command robots to complete long-horizon tasks via simple language commands, such as "make the tea".
-                Achieving this requires robust generalization across various dimensions, including objects, environments, actions, and tasks.
-                My core insight is that strong generalization can be achieved through a structured representation of world knowledge.
-                Rather than constructing this representation from scratch, robots should leverage the rich knowledge embedded in human language, grounding it through interactions with their environments to connect abstract knowledge to their sensorimotor capabilities.
-              </p>
-              <p>
-                My prior research has investigated core components of this structured knowledge representation, methods to extract and refine this knowledge extracted from humans, and algorithms that enable reasoning with this knowledge to support broad generalization.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:weiyul@stanford.edu">Email</a> &nbsp/&nbsp
-                <a href="data/CV-WeiyuLiu.pdf">CV (Nov 2024)</a> &nbsp/&nbsp
-                <a href="data/WeiyuLiu-ResearchStatement.pdf">Research Statement (2022)</a> <br>
-                <a href="https://scholar.google.com/citations?user=PHi0YEQAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/wliu88">Github</a> &nbsp/&nbsp
-                <a href="https://twitter.com/Weiyu_Liu_">Twitter</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/WeiyuLiuRobot.jpg"><img style="width:90%;max-width:100%" alt="profile photo" src="images/WeiyuLiuRobot.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <!--<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>-->
-            <!--<tr>-->
-            <!--<td style="padding:20px;width:100%;vertical-align:middle">-->
-              <!--<heading>Semantic Reasoning</heading>-->
-              <!--<p>-->
-                <!--&lt;!&ndash;Robots are increasingly transitioning from specialized, single task machines to general-purpose systems that operate in diverse and dynamic environments.  &ndash;&gt;-->
-                <!--&lt;!&ndash;I'm interested in computer vision, machine learning, optimization, and image processing.&ndash;&gt;-->
-                <!--&lt;!&ndash;Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images.&ndash;&gt;-->
-                <!--&lt;!&ndash;Representative papers are <span class="highlight">highlighted</span>.&ndash;&gt;-->
-              <!--</p>-->
-            <!--</td>-->
-          <!--</tr>-->
-        <!--</tbody></table>-->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light">
+    <div class="container">
+      <!-- Toggle button for mobile view (modified to custom version) -->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <!-- Collapsible navigation links -->
+      <div class="collapse navbar-collapse ps-0" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item me-3"><a class="nav-link ps-0" href="#Home" style="color: #2C4282;">Home</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="#News" style="color: #2C4282;">News</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="#Group" style="color: #2C4282;">Group</a></li>  
+          <li class="nav-item me-3"><a class="nav-link" href="#Publications" style="color: #2C4282;">Publications</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="#Mentoring" style="color: #2C4282;">Mentoring</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="#Service" style="color: #2C4282;">Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-          <tr onmouseout="blade_stop()" onmouseover="blade_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='blade_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/blade.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/blade.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function blade_start() {
-                  document.getElementById('blade_image').style.opacity = "1";
-                }
+  <!-- Profile Section -->
+  <div class="container" id="Home" style="margin-top: 90px;">
+    <div class="row align-items-center gy-4">
+      <div class="col-sm-3">
+        <img
+          src="images/WeiyuLiuRobot.jpg"
+          class="img-fluid rounded border"
+          alt="Profile Photo of Weiyu Liu">
+      </div>
+      <div class="col-sm-9">
+        <div class="text-sm-start">
+          <h3>Weiyu Liu</h3>
+        </div>
+        <p>
+          I am an incoming Assistant Professor in the <a href="https://www.cs.utah.edu/">Kahlert School of Computing</a> at the University of Utah.
+          Currently, I am a Postdoctoral Scholar working with 
+          <a href="https://jiajunwu.com/">Jiajun Wu</a> in the CogAI group and 
+          <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab (SVL)</a>.
+          I completed my Ph.D. in robotics at Georgia Institute of Technology, 
+          advised by <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>. 
+          During my Ph.D., I interned at the <a href="https://research.nvidia.com/labs/srl/">NVIDIA Seattle Robotics Lab</a>, working with 
+          <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>,
+          <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
+          <a href="https://animesh.garg.tech/">Animesh Garg</a>, and
+          <a href="https://cpaxton.github.io/about/">Chris Paxton</a>. 
+          Prior to joining the Ph.D. program, I received my Bachelor's degree in Electrical Engineering from Georgia Tech.
+        </p>
+        <p>
+          <a href="mailto:weiyul@stanford.edu">Email</a> &nbsp;/&nbsp;
+          <a href="data/CV-WeiyuLiu.pdf">CV (Dec 2024)</a> &nbsp;/&nbsp;
+          <!-- <a href="data/WeiyuLiu-ResearchStatement.pdf">Research Statement (2022)</a> &nbsp;/&nbsp; -->
+          <a href="https://scholar.google.com/citations?user=PHi0YEQAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+          <a href="https://github.com/wliu88">Github</a> &nbsp;/&nbsp;
+          <a href="https://twitter.com/Weiyu_Liu_">Twitter</a>
+        </p>
+      </div>
+    </div>
+  </div>
 
-                function blade_stop() {
-                  document.getElementById('blade_image').style.opacity = "0";
-                }
-                blade_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://blade-bot.github.io/">
-                <papertitle>Learning Compositional Behaviors from Demonstration and Language</papertitle>
-              </a>
-              <br>
-              <br>
+  <!-- Cal inline embed code begins -->
+  <!-- <div class="container pt-4" id="my-cal-inline"> -->
+    <!-- Cal floating-popup embed code begins -->
+    <!-- <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "30min", {origin:"https://cal.com"});
+
+      Cal.ns["30min"]("floatingButton", {"calLink":"weiyul/30min","config":{"layout":"week_view","theme":"light"},"buttonColor":"#F2EEEB","buttonTextColor":"#2C4282"}); 
+      Cal.ns["30min"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#2C4282"}},"hideEventTypeDetails":false,"layout":"week_view"});
+      </script> -->
+      <!-- Cal floating-popup embed code ends -->
+  <!-- </div> -->
+
+
+  <!-- Research Section -->
+  <div class="container pt-4" id="Research">
+    <div class="text-sm-start">
+      <h5>Research</h5>
+    </div>
+    <p>
+      The goal of my research is to develop robots that can effectively perceive, 
+      model, and interact with the real world. I am particularly interested in the 
+      application where human users can easily command robots to complete long-horizon 
+      tasks via simple language commands, such as "make the tea". 
+      Achieving this requires robust generalization across various dimensions, 
+      including objects, environments, actions, and tasks. My core insight is that 
+      strong generalization can be achieved through a structured representation 
+      of world knowledge.
+      Rather than constructing this representation from scratch, robots should leverage 
+      the rich knowledge embedded in human language, grounding it through interactions 
+      with their environments to connect abstract knowledge to their sensorimotor 
+      capabilities.
+    </p>
+    <p>
+      My prior research has investigated core components of this structured knowledge 
+      representation, methods to extract and refine this knowledge extracted from humans, 
+      and algorithms that enable reasoning with this knowledge to support broad 
+      generalization.
+    </p>
+  </div>
+
+  <!-- News Section -->
+  <div class="container pt-3" id="News">
+    <div class="text-sm-start">
+      <h5>News</h5>
+    </div>
+    <div>
+      <ul id="newsList">
+        <li>05/2025 – Will organize the <a href="https://foundation-models-meet-embodied-agents.github.io/cvpr2025/">CVPR 2025 Workshop on Foundation Models for Embodied Agents</a></li>
+        <li>04/2025 – Gave a guest lecture in CS 8001: Robotics and Human-Robot Interaction at Georgia Tech</li>
+        <li>03/2025 – Will serve as an Area Chair (AC) for <a href="https://www.corl.org/">CoRL 2025</a></li>
+        <li>02/2025 – Gave a guest lecture in <a href="https://limanling.github.io/teaching/cs396-reasoning-planning/">CS 396: Reasoning and Planning in the Foundation Model Era</a> at Northeastern University</li>
+      </ul>
+      <div class="collapse" id="collapseNews">
+        <ul id="moreNewsList">
+          <li>10/2024 – Gave an oral presentation at the <a href="https://leap-workshop.github.io/">LEAP Workshop</a> at CoRL 2024</li>
+          <li>06/2024 – Organized the <a href="https://vlmnm-workshop.github.io/">ICRA 2024 Workshop on Vision-Language Models for Navigation and Manipulation</a></li>
+          <li>01/2023 – Gave an invited talk at the <a href="https://interact.berkeley.edu/">InterACT Lab</a> at UC Berkeley</li>
+          <li>06/2022 – Selected as an <a href="https://sites.google.com/view/rsspioneers2022/">RSS Pioneer</a></li>
+          <li>03/2022 – Gave an invited talk at the <a href="https://robotics.cs.toronto.edu/toronto-air/">Toronto AI in Robotics Seminar</a> at the University of Toronto</li>
+          <li>03/2022 – Gave an invited talk at the <a href="https://progress.eecs.umich.edu/">Laboratory for Progress</a> at the University of Michigan</li>
+          <li>05/2019 – Won First Place in <a href="https://youtu.be/PhgF1Ms5lOU?si=Xx49LYelJNsBhjDl">Fetch It! The Mobile Manipulation Challenge</a></li>
+        </ul>
+      </div>
+      <a data-bs-toggle="collapse" href="#collapseNews" role="button" aria-expanded="false" aria-controls="collapseNews" class="text-decoration-none" id="newsToggle">
+        Click here to read more <i class="fas fa-chevron-down fa-xs"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="container pt-4" id="Group">
+    <div class="text-sm-start">
+      <h5>Group</h5>
+    </div>
+    <p>
+      <span class="highlight-text">I am looking for motivated and talented students to join my research group.</span>
+      <br>
+      <a data-bs-toggle="collapse" href="#collapseRecruitment" role="button" aria-expanded="false" aria-controls="collapseRecruitment" class="text-decoration-none" id="recruitmentToggle">
+         Click here to read more <i class="fas fa-chevron-down fa-xs"></i>
+      </a>
+    </p>
+    <div class="collapse" id="collapseRecruitment">
+      <div class="card card-body mb-3">
+        <p>Thank you for your interest in joining our research group! Please review the information below about our research environment and goals. </p>
+        <p>If you are a prospective PhD student interested in joining my group, especially for the coming application season, please fill out this <a href="https://forms.gle/11AmPoZYzMhyVRVo7">PhD Opportunities Form</a>. If you are interested in working with me as an undergraduate student, master's student, postdoc, research intern, or visiting scholar, please complete this <a href="https://forms.gle/vKa13ZVurkyGre416">Research Opportunities Form</a>. I apologize that I might not be able to respond to all emails, but I will carefully review all submitted forms.</p>
+        <hr>
+        <b>Research Vision</b>
+        <p>We tackle problems that bring new ideas and make a real-world difference. Our projects can lead to new algorithms, datasets, benchmarks, or integrated hardware and software solutions.</p>
+        
+        <b>Publishing and Dissemination</b>
+        <p>I encourage students to publish one paper each year, something you are genuinely proud to share. Alongside the paper, we release code, datasets, project websites, and other materials to help the community build on our work.</p>
+        
+        <b>Mentorship and Advising</b>
+        <p>I will schedule recurring meetings with all group members and make it a priority to meet individually with each PhD student every week. We also hold regular lab meetings / reading groups to share ideas and learn from one another. I believe strong research comes from a supportive, honest, and intellectually open environment.</p>
+        <p>For <span class="highlight-text">research</span>, I will support your growth in identifying meaningful questions, developing solutions, writing, sharing work, managing projects, giving and receiving constructive feedback, and shaping a strong research narrative over time.</p>
+        <p>For <span class="highlight-text">your career</span>, I will provide advice on finding internships, building your network, mentoring junior students, and preparing for academic or industry jobs.</p>
+        <p>For <span class="highlight-text">personal growth</span> beyond research, I encourage you to balance work and life, travel (for example, by attending international conferences), and continue developing your interests and hobbies.</p>
+        
+        <b>Funding and Resources</b>
+        <p>I will work to secure funding to support PhD students. Students will have access to high-performance compute resources, robot hardware, personal computers, and travel support for attending conferences.</p>
+        
+        <b>What I'm Looking For</b>
+        <p>I'm looking for students who are excited in the research directions we pursue. Ideal candidates:</p>
+        <ul>
+          <li>Have prior research experience in robot learning, manipulation, task and motion planning, or related fields such as AI, machine learning, computer vision, NLP</li>
+          <li>Think deeply and communicate clearly</li>
+          <li>Have strong coding and hands-on skills</li>
+          <li>Are self-driven</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <b style="margin-bottom: 5px; display: block;">PhD Students</b> -->
+    <!-- <div class="row gy-4 align-items-top"> -->
+      <!-- Student 1 -->
+      <!-- <div class="col-sm-3">
+          <img src="images/WeiyuLiuRobot.jpg" class="img-fluid rounded border" alt="Student 1">
+          <b>Student Name</b>
+      </div> -->
+      
+      <!-- Student 2 -->
+      <!-- <div class="col-sm-3">
+        <img src="images/WeiyuLiuRobot.jpg" class="img-fluid rounded border" alt="Student 2">
+        <b>Student Name</b>
+      </div> -->
+      
+      <!-- Student 3 -->
+      <!-- <div class="col-sm-3">
+        <img src="images/WeiyuLiuRobot.jpg" class="img-fluid rounded border" alt="Student 3">
+        <b>Student Name</b>
+      </div> -->
+      
+      <!-- Student 4 -->
+      <!-- <div class="col-sm-3">
+        <img src="images/WeiyuLiuRobot.jpg" class="img-fluid rounded border" alt="Student 4">
+        <b>Student Name</b>
+        <p>(w/ <a href=""></a>)</p>
+      </div> -->
+    
+    <!-- <div class="row gy-4 align-items-top"> -->
+      <!-- <div class="col-sm-4">
+        <b>Master Students</b>
+        <p>
+          <a href="">ABC</a>
+        </p>
+      </div> -->
+      <!-- <div class="col-sm-4">
+        <b>Undergraduate Students</b>
+        <p>
+          <a href="">DEF</a> <br>
+          <a href="">XYZ</a>
+        </p>
+      </div> -->
+      <!-- <div class="col-sm-4">
+        <b>Collaborators</b>
+        <p>
+          <a href="">GHI</a> <br>
+        </p>
+      </div> -->
+    <!-- </div> -->
+  
+  </div>
+
+
+  <!-- Publications Section -->
+  <div class="container pt-3" id="Publications">
+    <div class="text-sm-start">
+      <h5>Publications</h5>
+    </div>
+    <div class="filter-options">
+        <a href="#" onclick="filterPubs('selected'); return false;" id="filter-selected" class="active-filter">Show Selected</a> /
+         <a href="#" onclick="filterPubs('date'); return false;" id="filter-date">Show By Date</a>
+      <br>
+        Years:
+        <a href="#" onclick="scrollToYear('2024'); return false;">2024</a> /
+        <a href="#" onclick="scrollToYear('2023'); return false;">2023</a> /
+        <a href="#" onclick="scrollToYear('2022'); return false;">2022</a> /
+        <a href="#" onclick="scrollToYear('2021'); return false;">2021</a> /
+        <a href="#" onclick="scrollToYear('2020'); return false;">2020</a> /
+        <a href="#" onclick="scrollToYear('2019'); return false;">2019</a> /
+        <a href="#" onclick="scrollToYear('before2018'); return false;">Before 2018</a>
+    </div>
+
+    <div id="pubs">
+      <!-- Blade -->
+      <div class="publication selected" data-date="2024" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/blade.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Learning Compositional Behaviors from Demonstration and Language
+            </b>
+            <p>
               <strong>Weiyu Liu*</strong>,
               <a href="https://neilnie.com/">Neil Nie*</a>,
               <a href="https://ai.stanford.edu/~zharu/">Ruohan Zhang</a>,
@@ -108,21 +287,58 @@
               <br>
               <em>Conference on Robot Learning (CoRL)</em>, 2024
               <br>
+              <em>2nd Workshop on Learning Effective Abstractions for Planning (LEAP)</em>, 2024 <span class="highlight-text">(Oral Presentation)</span>
+              <br>
               <a href="https://openreview.net/forum?id=fR1rCXjCQX&noteId=fR1rCXjCQX">paper</a> /
               <a href="https://blade-bot.github.io/">website</a> /
               <a href="data/blade.bib">bibtex</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/parl.png" alt="planning_abstractions_png" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://parl2024.github.io/">
-                <papertitle>Learning Planning Abstractions from Language</papertitle>
-              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CPM -->
+      <div class="publication" data-date="2023" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/cpm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Composable Part-Based Manipulation
+            </b>
+            <p>
+              <strong>Weiyu Liu</strong>,
+              <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
+              <a href="http://web.stanford.edu/~joycj/">Joy Hsu</a>,
+              <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
+              <a href="https://animesh.garg.tech/">Animesh Garg</a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>
               <br>
+              <em>Conference on Robot Learning (CoRL)</em>, 2023
               <br>
+              <a href="https://arxiv.org/abs/2405.05876">arxiv</a> /
+              <a href="https://sites.google.com/view/part-based-manipulation">website</a> /
+              <a href="data/cpm.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PARL -->
+      <div class="publication" data-date="2024" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/parl.png" alt="Planning abstractions figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Learning Planning Abstractions from Language
+            </b>
+            <p>
               <strong>Weiyu Liu*</strong>,
               <a href="https://jc043.github.io/">Geng Chen*</a>,
               <a href="https://stanford.edu/~joycj/">Joy Hsu</a>,
@@ -134,36 +350,29 @@
               <a href="https://arxiv.org/abs/2405.03864">arxiv</a> /
               <a href="https://parl2024.github.io/">website</a> /
               <a href="data/parl.bib">bibtex</a>
-            </td>
-          </tr>
-          <tr onmouseout="ikea_stop()" onmouseover="ikea_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ikea_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/ikea.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/ikea.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function ikea_start() {
-                  document.getElementById('ikea_image').style.opacity = "1";
-                }
+            </p>
+          </div>
+        </div>
+      </div>
 
-                function ikea_stop() {
-                  document.getElementById('ikea_image').style.opacity = "0";
-                }
-                ikea_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://yunongliu1.github.io/ikea-video-manual/">
-                <papertitle>IKEA Manuals at Work: 4D Grounding of Assembly Instructions on Internet Videos</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- IKEA -->
+      <div class="publication" data-date="2024" data-topic="perception">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/ikea.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              IKEA Manuals at Work: 4D Grounding of Assembly Instructions on Internet Videos
+            </b>
+            <p>
               <a href="https://yunongliu.com/">Yunong Liu</a>,
               <a href="https://ceyzaguirre4.github.io/">Cristobal Eyzaguirre</a>,
+              <a href="https://limanling.github.io/">Manling Li</a>,
+              <a href="https://shubhkhanna.com/">Shubh Khanna</a>,
               <a href="https://www.niebles.net/">Juan Carlos Niebles</a>,
               <a href="https://scholar.google.com/citations?user=iNT6NOAAAAAJ&hl=en">Vineeth Ravi</a>,
               <a href="https://sites.google.com/site/saumitramishrac4dm">Saumitra Mishra</a>,
@@ -176,18 +385,22 @@
               <a href="https://yunongliu1.github.io/ikea-video-manual/">website</a> /
               <a href="https://github.com/yunongLiu1/IKEA-Manuals-at-Work">code and data</a> /
               <a href="data/ikea.bib">bibtex</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/larc.png" alt="3d_visual_grounding_png" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://chunfeng3364.github.io/projects/larc_website/project_page.html">
-                <papertitle>Naturally Supervised 3D Visual Grounding with Language-Regularized Concept Learners</papertitle>
-              </a>
-              <br>
-              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LARC -->
+      <div class="publication" data-date="2024" data-topic="perception">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/larc.png" alt="3D visual grounding figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Naturally Supervised 3D Visual Grounding with Language-Regularized Concept Learners
+            </b>
+            <p>
               <a href="https://chunfeng3364.github.io/">Chun Feng*</a>,
               <a href="https://stanford.edu/~joycj/">Joy Hsu*</a>,
               <strong>Weiyu Liu</strong>,
@@ -197,20 +410,24 @@
               <br>
               <a href="https://arxiv.org/abs/2404.19696">paper</a> /
               <a href="https://chunfeng3364.github.io/projects/larc_website/project_page.html">website</a> /
-              <a href="https://github.com/chunfeng3364/LARC">code</a>
+              <a href="https://github.com/chunfeng3364/LARC">code</a> /
               <a href="data/larc.bib">bibtex</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/eai.png" alt="embodied_agent_interface_png" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://embodied-agent-interface.github.io/">
-                <papertitle>Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making</papertitle>
-              </a>
-              <br>
-              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EAI -->
+      <div class="publication" data-date="2024" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/eai.png" alt="Embodied agent interface figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making
+            </b>
+            <p>
               <a href="https://limanling.github.io/">Manling Li*</a>,
               <a href="https://shiyu-zhao.netlify.app/">Shiyu Zhao*</a>,
               <a href="https://qinengwang-aiden.github.io/">Qineng Wang*</a>,
@@ -222,30 +439,34 @@
               <a href="https://www.cs.columbia.edu/~lierranli/">Li Erran Li</a>,
               <a href="https://ai.stanford.edu/~zharu/">Ruohan Zhang</a>,
               <strong>Weiyu Liu</strong>,
-              <br>
               <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>,
               <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>,
               <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
               <a href="https://jiajunwu.com/">Jiajun Wu</a>
               <br>
               <em>Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track</em>, 2024
+              <span class="highlight-text">(Oral Presentation)</span>
               <br>
               <a href="https://arxiv.org/abs/2410.07166">paper</a> /
               <a href="https://embodied-agent-interface.github.io/">website</a> /
               <a href="https://github.com/embodied-agent-interface/embodied-agent-interface">code</a> /
-              <a href="data/eai">bibtex</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/marple.png" alt="marple_png" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://marple-benchmark.github.io/">
-                <papertitle>MARPLE: A Benchmark for Long-Horizon Inference</papertitle>
-              </a>
-              <br>
-              <br>
+              <a href="data/eai.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARPLE -->
+      <div class="publication" data-date="2024" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/marple.png" alt="MARPLE benchmark figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              MARPLE: A Benchmark for Long-Horizon Inference
+            </b>
+            <p>
               <a href="https://www.linkedin.com/in/emily-jin-020/">Emily Jin</a>,
               <a href="https://www.linkedin.com/in/zhuoyi-huang/">Zhuoyi Huang</a>,
               <a href="https://janphilippfranken.github.io/">Jan-Philipp Fränken</a>,
@@ -263,20 +484,22 @@
               <a href="https://marple-benchmark.github.io/">website</a> /
               <a href="https://github.com/marple-benchmark/marple">code and data</a> /
               <a href="data/marple.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/survey.jpg" alt="survey_png" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">
-                <papertitle>A Survey of Semantic Reasoning Frameworks for Robotic Systems</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- Survey -->
+      <div class="publication selected" data-date="2023" data-topic="commonsense">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/survey.jpg" alt="Survey paper thumbnail" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              A Survey of Semantic Reasoning Frameworks for Robotic Systems
+            </b>
+            <p>
               <strong>Weiyu Liu<sup>1</sup></strong>,
               <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna<sup>1</sup></a>,
               <a href="https://maithili.github.io/">Maithili Patel<sup>2</sup></a>,
@@ -287,76 +510,25 @@
               <br>
               <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">paper</a> /
               <a href="data/LiuSurvey2023.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="cpm_stop()" onmouseover="cpm_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='cpm_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/cpm.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/cpm.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function cpm_start() {
-                  document.getElementById('cpm_image').style.opacity = "1";
-                }
-
-                function cpm_stop() {
-                  document.getElementById('cpm_image').style.opacity = "0";
-                }
-                cpm_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="">
-                <papertitle>Composable Part-Based Manipulation</papertitle>
-              </a>
-              <br>
-              <br>
-              <strong>Weiyu Liu</strong>,
-              <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
-              <a href="http://web.stanford.edu/~joycj/">Joy Hsu</a>,
-              <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
-              <a href="https://animesh.garg.tech/">Animesh Garg</a>,
-              <a href="https://jiajunwu.com/">Jiajun Wu</a>
-              <br>
-              <em>Conference on Robot Learning (CoRL)</em>, 2023
-              <br>
-              <a href="https://arxiv.org/abs/2405.05876">arxiv</a> /
-              <a href="https://sites.google.com/view/part-based-manipulation">website</a> /
-              <a href="data/cpm.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <tr onmouseout="structdiffusion_stop()" onmouseover="structdiffusion_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='structdiffusion_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/structdiffusion.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/structdiffusion.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function structdiffusion_start() {
-                  document.getElementById('structdiffusion_image').style.opacity = "1";
-                }
-
-                function structdiffusion_stop() {
-                  document.getElementById('structdiffusion_image').style.opacity = "0";
-                }
-                structdiffusion_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2211.04604">
-                <papertitle>StructDiffusion: Language-Guided Creation of Physically-Valid Structures using Unseen Objects</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- StructDiffusion -->
+      <div class="publication selected" data-date="2023" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/structdiffusion.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+                StructDiffusion: Language-Guided Creation of Physically-Valid Structures using Unseen Objects
+            </b>
+            <p>
               <strong>Weiyu Liu</strong>,
               <a href="https://yilundu.github.io/">Yilun Du</a>,
               <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
@@ -371,123 +543,83 @@
               <a href="https://github.com/StructDiffusion/StructDiffusion">code & data</a> /
               <a href="https://structdiffusion.github.io/">website</a> /
               <a href="data/structdiffusion.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/survey.jpg" alt="survey_png" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">
-                <papertitle>A Survey of Semantic Reasoning Frameworks for Robotic Systems</papertitle>
-              </a>
-              <br>
-              <br>
-              <strong>Weiyu Liu<sup>1</sup></strong>,
-              <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna<sup>1</sup></a>,
-              <a href="https://maithili.github.io/">Maithili Patel<sup>2</sup></a>,
-              <a href="https://kartikvrama.github.io/">Kartik Ramachandruni<sup>2</sup></a>,
-              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
-              <br>
-              <em>Robotics and Autonomous Systems</em>, 2023
-              <br>
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S092188902200183X">paper</a> /
-              <a href="data/LiuSurvey2023.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <tr onmouseout="eRD_stop()" onmouseover="eRD_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='eRD_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/eRD.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/eRD.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function eRD_start() {
-                  document.getElementById('eRD_image').style.opacity = "1";
-                }
-
-                function eRD_stop() {
-                  document.getElementById('eRD_image').style.opacity = "0";
-                }
-                eRD_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2305.10857">
-                <papertitle>Latent Space Planning for Multi-Object Manipulation with Environment-Aware Relational Classifiers</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- eRD -->
+      <div class="publication" data-date="2023" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/eRD.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Latent Space Planning for Multi-Object Manipulation with Environment-Aware Relational Classifiers
+            </b>
+            <p>
               <a href="https://robot-learning.cs.utah.edu/yixuanh">Yixuan Huang</a>,
               <a href="https://nicholscrawford.github.io/">Nichols Crawford Taylor</a>,
               <a href="https://adamconkey.github.io/">Adam Conkey</a>,
               <strong>Weiyu Liu</strong>,
-              <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
+              <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>
               <br>
-              <em>Under Review</em>, 2023
+              <em>Transactions on Robotics (TR-O)</em>, 2023
               <br>
               <a href="https://arxiv.org/abs/2305.10857">arxiv</a> /
               <a href="https://sites.google.com/view/erelationaldynamics">website</a> /
               <a href="data/erd.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/grasp_gpt.jpg" alt="grasp_gpt" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2307.13204">
-                <papertitle>GraspGPT: Leveraging Semantic Knowledge from a Large Language Model for Task-Oriented Grasping</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- GraspGPT -->
+      <div class="publication" data-date="2023" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/grasp_gpt.jpg" alt="GraspGPT figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              GraspGPT: Leveraging Semantic Knowledge from a Large Language Model for Task-Oriented Grasping
+            </b>
+            <p>
               <a href="https://mkt1412.github.io/">Chao Tang</a>,
               Dehao Huang
               Wenqi Ge,
               <strong>Weiyu Liu</strong>,
               <a href="https://webdocs.cs.ualberta.ca/~zhang/index.html">Hong Zhang</a>
               <br>
-              <em>Under Review</em>, 2023
+              <em>Robotics and Automation Letters (RA-L)</em>, 2023
               <br>
               <a href="https://arxiv.org/abs/2307.13204">arxiv</a> /
               <a href="https://github.com/mkt1412/GraspGPT_public">code & data</a> /
               <a href="https://sites.google.com/view/graspgpt/">website</a> /
               <a href="data/graspgpt.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="structformer_stop()" onmouseover="structformer_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='structformer_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/structformer.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/structformer.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function structformer_start() {
-                  document.getElementById('structformer_image').style.opacity = "1";
-                }
-
-                function structformer_stop() {
-                  document.getElementById('structformer_image').style.opacity = "0";
-                }
-                structformer_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2110.10189">
-                <papertitle>StructFormer: Learning Spatial Structure for Language-Guided Semantic Rearrangement of Novel Objects</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- StructFormer -->
+      <div class="publication" data-date="2022" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/structformer.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              StructFormer: Learning Spatial Structure for Language-Guided Semantic Rearrangement of Novel Objects
+            </b>
+            <p>
               <strong>Weiyu Liu</strong>,
               <a href="https://cpaxton.github.io/about/">Chris Paxton</a>,
               <a href="https://robot-learning.cs.utah.edu/thermans">Tucker Hermans</a>,
@@ -500,36 +632,25 @@
               <a href="https://sites.google.com/view/structformer">website</a> /
               <a href="https://drive.google.com/file/d/1LPGDk1ghZ_Zjxcx69-9GQOY_En0N3ZSD/view">talk</a> /
               <a href="data/LiuICRA2022.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="link_stop()" onmouseover="link_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='link_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/link.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/link.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function link_start() {
-                  document.getElementById('link_image').style.opacity = "1";
-                }
-
-                function link_stop() {
-                  document.getElementById('link_image').style.opacity = "0";
-                }
-                link_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://www.roboticsproceedings.org/rss17/p035.html">
-                <papertitle>Learning Instance-Level N-Ary Semantic Knowledge At Scale For Robots Operating in Everyday Environments
-</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- LINK -->
+      <div class="publication selected" data-date="2021" data-topic="commonsense knowledge">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/link.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Learning Instance-Level N-Ary Semantic Knowledge At Scale For Robots Operating in Everyday Environments
+            </b>
+            <p>
               <strong>Weiyu Liu</strong>,
               <a href="https://scholar.google.com/citations?user=uUTLG2IAAAAJ&hl=en">Dhruva Bansal</a>,
               <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
@@ -537,39 +658,32 @@
               <br>
               <em>Robotics: Science and Systems (RSS)</em>, 2021
               <br>
+              <em>Autonomous Robots</em>, 2023 <span class="highlight-text">(Invited Submission)</span>
+              <br>
               <a href="http://www.roboticsproceedings.org/rss17/p035.html">paper</a> /
+              <a href="https://link.springer.com/article/10.1007/s10514-023-10099-4">journal (extended version)</a> /
               <a href="https://github.com/wliu88/LINK">code & data</a> /
               <a href="https://youtu.be/uFxXQxOuTlo">talk</a> /
               <a href="data/LiuRSS2021.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="kg_task_stop()" onmouseover="kg_task_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='kg_task_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/kg_task.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/kg_task.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function kg_task_start() {
-                  document.getElementById('kg_task_image').style.opacity = "1";
-                }
-
-                function kg_task_stop() {
-                  document.getElementById('kg_task_image').style.opacity = "0";
-                }
-                kg_task_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2105.04484">
-                <papertitle>Towards Robust One-shot Task Execution using Knowledge Graph Embeddings</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- KG-Task -->
+      <div class="publication" data-date="2021" data-topic="commonsense knowledge">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/kg_task.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Towards Robust One-shot Task Execution using Knowledge Graph Embeddings
+            </b>
+            <p>
               <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
               <a href="https://sites.google.com/site/lvnair93/">Lakshmi Nair</a>,
               <strong>Weiyu Liu</strong>,
@@ -579,35 +693,25 @@
               <br>
               <a href="https://arxiv.org/abs/2105.04484">arxiv</a> /
               <a href="data/DarunaICRA2021.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="affkpnet_stop()" onmouseover="affkpnet_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='affkpnet_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/affkpnet.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/affkpnet.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function affkpnet_start() {
-                  document.getElementById('affkpnet_image').style.opacity = "1";
-                }
-
-                function affkpnet_stop() {
-                  document.getElementById('affkpnet_image').style.opacity = "0";
-                }
-                affkpnet_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/abstract/document/9364360">
-                <papertitle>An Affordance Keypoint Detection Network for Robot Manipulation</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- AffKpNet -->
+      <div class="publication" data-date="2021" data-topic="perception">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/affkpnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              An Affordance Keypoint Detection Network for Robot Manipulation
+            </b>
+            <p>
               <a href="https://scholar.google.com/citations?user=qy644T4AAAAJ&hl=en">Ruinian Xu</a>,
               <a href="https://fujenchu.github.io/">Fu-Jen Chu</a>,
               <a href="https://scholar.google.com/citations?user=hXGhWsUAAAAJ&hl=zh-CN">Chao Tang</a>,
@@ -619,35 +723,25 @@
               <a href="https://ieeexplore.ieee.org/abstract/document/9364360">paper</a> /
               <a href="https://github.com/ivalab/AffKpNet">code & data</a> /
               <a href="data/XuRAL2021.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="kbgrasp_stop()" onmouseover="kbgrasp_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='kbgrasp_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/kbgrasp.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/kbgrasp.jpg' width="161">
-              </div>
-              <script type="text/javascript">
-                function kbgrasp_start() {
-                  document.getElementById('kbgrasp_image').style.opacity = "1";
-                }
-
-                function kbgrasp_stop() {
-                  document.getElementById('kbgrasp_image').style.opacity = "0";
-                }
-                kbgrasp_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2011.06431">
-                <papertitle>Same Object, Different Grasps: Data and Semantic Knowledge for Task-Oriented Grasping</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- KBGrasp -->
+      <div class="publication selected" data-date="2020" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/kbgrasp.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Same Object, Different Grasps: Data and Semantic Knowledge for Task-Oriented Grasping
+            </b>
+            <p>
               <a href="http://adithyamurali.com/">Adithya Murali</a>,
               <strong>Weiyu Liu</strong>,
               <a href="http://kennethmarino.com/">Kenneth Marino</a>,
@@ -662,35 +756,25 @@
               <a href="https://youtu.be/eV-KyT6OK14">talk</a> /
               <a href="https://sites.google.com/view/taskgrasp">project page</a> / 
               <a href="data/MuraliCoRL2020.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="cage_stop()" onmouseover="cage_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='cage_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/cage.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/cage.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function cage_start() {
-                  document.getElementById('cage_image').style.opacity = "1";
-                }
-
-                function cage_stop() {
-                  document.getElementById('cage_image').style.opacity = "0";
-                }
-                cage_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1909.11142">
-                <papertitle>CAGE: Context-Aware Grasping Engine</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- CAGE -->
+      <div class="publication" data-date="2020" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/cage.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              CAGE: Context-Aware Grasping Engine
+            </b>
+            <p>
               <strong>Weiyu Liu</strong>,
               <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
               <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
@@ -702,64 +786,81 @@
               <a href="https://youtu.be/EnHUHQv8hr0">video</a> /
               <a href="https://icra.cc.gatech.edu/robots-gain-ability-to-master-object-manipulation-with-context-aware-technique/">press</a> /
               <a href="data/LiuICRA2020.bib">bibtex</a>
-              <!--<a href="data/B3DO_ICCV_2011.bib">bibtex</a> /-->
-              <!--<a href="https://drive.google.com/file/d/1qf4-U5RhSw12O7gzQwW66SMQhs2FWYDW/view?usp=sharing">"smoothing" code</a>-->
-              <!--<p>We present a large RGB-D dataset of indoor scenes and investigate ways to improve object detection using depth information.</p>-->
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="apr_stop()" onmouseover="apr_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='apr_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/apr.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/apr.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function apr_start() {
-                  document.getElementById('apr_image').style.opacity = "1";
-                }
-
-                function apr_stop() {
-                  document.getElementById('apr_image').style.opacity = "0";
-                }
-                apr_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1905.10799">
-                <papertitle>Path Ranking with Attention to Type Hierarchies</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- APR -->
+      <div class="publication" data-date="2020" data-topic="commonsense knowledge">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/apr.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Path Ranking with Attention to Type Hierarchies
+            </b>
+            <p>
               <strong>Weiyu Liu</strong>,
               <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
               <a href="https://www.cc.gatech.edu/~zk15/">Zsolt Kira</a>,
               <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
               <br>
-              <em>Conference on Artificial Intelligence (AAAI)</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <em>Conference on Artificial Intelligence (AAAI)</em>, 2020 <span class="highlight-text">(Oral Presentation)</span>
               <br>
               <a href="https://arxiv.org/abs/1905.10799">arxiv</a> /
               <a href="https://github.com/wliu88/AttentivePathRanking">code</a> /
               <a href="data/LiuAAAI2020.bib">bibtex</a>
-              <!--<a href="data/B3DO_ICCV_2011.bib">bibtex</a> /-->
-              <!--<a href="https://drive.google.com/file/d/1qf4-U5RhSw12O7gzQwW66SMQhs2FWYDW/view?usp=sharing">"smoothing" code</a>-->
-              <!--<p>We present a large RGB-D dataset of indoor scenes and investigate ways to improve object detection using depth information.</p>-->
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/recovery.png" alt="b3do" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://www.banerjs.com/pdf/banerjs_isrr2019.pdf">
-                <papertitle>Taking Recoveries to Task: Recovery-Driven Development for Recipe-based Robot Tasks</papertitle>
-              </a>
+      <!-- RoboCSE -->
+      <div class="publication" data-date="2019" data-topic="commonsense knowledge">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/robocse_small.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              RoboCSE: Robot Common Sense Embedding
+            </b>
+            <p>
+              <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
+              <strong>Weiyu Liu</strong>,
+              <a href="https://www.cc.gatech.edu/~zk15/">Zsolt Kira</a>,
+              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
               <br>
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2019
               <br>
+              <a href="https://arxiv.org/abs/1903.00412">arxiv</a> /
+              <a href="https://github.com/adaruna3/RoboCSE">code & data</a> /
+              <a href="https://www.youtube.com/watch?v=ynHwNotCkDA">video</a> /
+              <a href="data/DarunaICRA2019.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recovery -->
+      <div class="publication" data-date="2019" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/recovery.png" alt="Recovery-Driven Development figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Taking Recoveries to Task: Recovery-Driven Development for Recipe-based Robot Tasks
+            </b>
+            <p>
               <a href="http://www.banerjs.com/">Siddhartha Banerjee*</a>,
               <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna*</a>,
               <a href="https://scholar.google.com/citations?user=DJHyEHoAAAAJ&hl=en">David Kent*</a>,
@@ -778,78 +879,25 @@
               <a href="http://www.banerjs.com/pdf/banerjs_isrr2019.pdf">paper</a> /
               <a href="https://github.com/GT-RAIL/derail-fetchit-public">code</a> /
               <a href="data/BanerjeeISRR2019.bib">bibtex</a>
-              <!--<a href="data/B3DO_ICCV_2011.bib">bibtex</a> /-->
-              <!--<a href="https://drive.google.com/file/d/1qf4-U5RhSw12O7gzQwW66SMQhs2FWYDW/view?usp=sharing">"smoothing" code</a>-->
-              <!--<p>We present a large RGB-D dataset of indoor scenes and investigate ways to improve object detection using depth information.</p>-->
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="robocse_stop()" onmouseover="robocse_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='robocse_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/robocse_small.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/robocse_small.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function robocse_start() {
-                  document.getElementById('robocse_image').style.opacity = "1";
-                }
-
-                function robocse_stop() {
-                  document.getElementById('robocse_image').style.opacity = "0";
-                }
-                robocse_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1903.00412">
-                <papertitle>RoboCSE: Robot Common Sense Embedding</papertitle>
-              </a>
-              <br>
-              <br>
-              <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
-              <strong>Weiyu Liu</strong>,
-              <a href="https://www.cc.gatech.edu/~zk15/">Zsolt Kira</a>,
-              <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>
-              <br>
-              <em>International Conference on Robotics and Automation (ICRA)</em>, 2019
-              <br>
-              <a href="https://arxiv.org/abs/1903.00412">arxiv</a> /
-              <a href="https://github.com/adaruna3/RoboCSE">code & data</a> /
-              <a href="https://www.youtube.com/watch?v=ynHwNotCkDA">video</a> /
-              <a href="data/DarunaICRA2019.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <tr onmouseout="blimp_stop()" onmouseover="blimp_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='blimp_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/blimp.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/blimp.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function blimp_start() {
-                  document.getElementById('blimp_image').style.opacity = "1";
-                }
-
-                function blimp_stop() {
-                  document.getElementById('blimp_image').style.opacity = "0";
-                }
-                blimp_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://link.springer.com/article/10.1631/FITEE.1800587">
-                <papertitle>Autonomous flying blimp interaction with human in an indoor space</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- Blimp -->
+      <div class="publication" data-date="2019" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/blimp.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Autonomous flying blimp interaction with human in an indoor space
+            </b>
+            <p>
               <a href="https://ningshiyao.com/">Ningshi Yao</a>,
               <a href="https://www.taoqiuyang.com/">Qiuyang Tao</a>,
               <strong>Weiyu Liu</strong>,
@@ -857,25 +905,28 @@
               Ye Tian,
               Peiyu Wang,
               Timothy Li,
-              <a href="https://fumin.ece.gatech.edu/">Fumin Zhang</a>,
+              <a href="https://fumin.ece.gatech.edu/">Fumin Zhang</a>
               <br>
               <em>Frontiers of Information Technology & Electronic Engineering</em>, 2019
               <br>
               <a href="https://link.springer.com/article/10.1631/FITEE.1800587">paper</a> /
               <a href="data/YaoFrontiers2019.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/sirok_big.png" alt="b3do" width="160" style="border-style: none">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://www.aaai.org/ocs/index.php/SSS/SSS18/paper/view/17517">
-                <papertitle>SiRoK: Situated Robot Knowledge - Understanding the Balance Between Situated Knowledge and Variability</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- SiRoK -->
+      <div class="publication" data-date="2018" data-topic="commonsense knowledge">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/sirok_big.png" alt="Situated Robot Knowledge figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              SiRoK: Situated Robot Knowledge - Understanding the Balance Between Situated Knowledge and Variability
+            </b>
+            <p>
               <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>,
               <a href="https://diligentrobots.com/vivian-chu">Vivian Chu</a>,
               <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
@@ -883,41 +934,31 @@
               <a href="https://meerahahn.github.io/">Meera Hahn</a>,
               Priyanka Khante,
               <strong>Weiyu Liu</strong>,
-              <a href="http://www.ece.utexas.edu/people/faculty/andrea-thomaz">Andrea Thomaz</a>,
+              <a href="http://www.ece.utexas.edu/people/faculty/andrea-thomaz">Andrea Thomaz</a>
               <br>
               <em>AAAI Spring Symposium Series (AAAI-SSS)</em>, 2018
               <br>
               <a href="https://www.aaai.org/ocs/index.php/SSS/SSS18/paper/view/17517">paper</a> /
               <a href="data/ChernovaAAAISSS2018.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <tr onmouseout="sbr_stop()" onmouseover="sbr_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='sbr_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/sbr.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/sbr.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function sbr_start() {
-                  document.getElementById('sbr_image').style.opacity = "1";
-                }
-
-                function sbr_stop() {
-                  document.getElementById('sbr_image').style.opacity = "0";
-                }
-                sbr_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://link.springer.com/chapter/10.1007/978-3-030-28619-4_29">
-                <papertitle>Situated Bayesian Reasoning Framework for Robots Operating in Diverse Everyday Environments</papertitle>
-              </a>
-              <br>
-              <br>
+      <!-- SBR -->
+      <div class="publication" data-date="2017" data-topic="commonsense knowledge">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/sbr.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Situated Bayesian Reasoning Framework for Robots Operating in Diverse Everyday Environments
+            </b>
+            <p>
               <a href="https://www.cc.gatech.edu/~chernova/">Sonia Chernova</a>,
               <a href="https://diligentrobots.com/vivian-chu">Vivian Chu</a>,
               <a href="http://www.prism.gatech.edu/~adaruna3/">Angel Daruna</a>,
@@ -925,30 +966,363 @@
               <a href="https://meerahahn.github.io/">Meera Hahn</a>,
               Priyanka Khante,
               <strong>Weiyu Liu</strong>,
-              <a href="http://www.ece.utexas.edu/people/faculty/andrea-thomaz">Andrea Thomaz</a>,
+              <a href="http://www.ece.utexas.edu/people/faculty/andrea-thomaz">Andrea Thomaz</a>
               <br>
               <em>International Symposium on Robotics Research (ISRR)</em>, 2017
               <br>
               <a href="https://link.springer.com/chapter/10.1007/978-3-030-28619-4_29">paper</a> /
               <a href="data/ChernovaISRR2017.bib">bibtex</a>
-            </td>
-          </tr>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Website source from <a href="https://jonbarron.info/">Jon Barron</a>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+  <!-- Mentoring Section -->
+  <div class="container pt-3" id="Mentoring">
+    <div class="text-sm-start">
+      <h5>Mentoring</h5>
+    </div>
+    <p>
+      <ul>
+        <li>Graduate Students
+          <ul>
+            <li><a href="https://www.neilnie.com/">Neil Nie</a> (Stanford MS, upcoming PhD at Berkeley)</li>
+            <li><a href="https://yunongliu.com/">Yunong Liu</a> (Stanford MS, upcoming at Luma AI)</li>
+            <li><a href="https://mkt1412.github.io/">Chao Tang</a> (Georgia Tech MS, upcoming Postdoc at KTH)</li>
+            <li><a href="https://www.linkedin.com/in/zhuoyi-huang/">Zhuoyi Huang</a> (Stanford MS, now at Microsoft AI)</li>
+            <li><a href="https://www.linkedin.com/in/jbhowmick/">Jayanta Bhowmick</a> (Georgia Tech MS, now at Amazon)</li>
+          </ul>
+        </li>
+        <li>Undergraduate Students
+          <ul>
+            <li><a href="https://xingjianbai.com/">Xingjian Bai</a> (Stanford Summer Intern, now PhD at MIT)</li>
+            <li><a href="https://emilyzjin.github.io/">Emily Jin</a> (Stanford BS, now PhD at Stanford)</li>
+            <li><a href="https://chunfeng3364.github.io/">Chun Feng</a> (Stanford Summer Intern, now MS at UIUC)</li>
+            <li><a href="https://jc043.github.io/">Geng Chen</a> (Stanford Intern, now MS at UCSD)</li>
+            <li><a href="https://dhruvabansal.com/">Dhruva Bansal</a> (Georgia Tech BS, MS at Stanford)</li>
+          </ul>
+        </li>
+      </ul>
+    </p>
+  </div>
 
-      </td>
-    </tr>
-  </table>
+  <!-- Professional Service Section -->
+  <div class="container pt-3" id="Service">
+    <div class="text-sm-start">
+      <h5>Service</h5>
+    </div>
+    <p>
+      <ul>
+        <li>Workshop Organization
+          <ul>
+            <li><a href="https://vlmnm-workshop.github.io/"><em>ICRA Vision-Language Models for Navigation and Manipulation</em>, 2024</a></li>
+            <li><a href="https://sites.google.com/view/rsspioneers2023"><em>RSS Pioneers</em>, 2023</a></li>
+          </ul>
+        </li>
+        <li>Area Chair: <em>CoRL</em></li>
+        <li>Reviewer: <em>RSS</em>, <em>CoRL</em>, <em>ICRA</em>, <em>IROS</em>, <em>RA-L</em>, <em>HRI</em>, <em>NeurIPS</em>, <em>ICLR</em>, <em>CVPR</em>, <em>ECCV</em>, <em>EMNLP</em>, <em>COLING</em></li>
+        <li>Contributor: <a href="https://hichristensen.com/pdf/roadmap-2024.pdf">A Roadmap for US Robotics (2024 Edition)</a></li>
+      </ul>
+    </p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="container mt-5 mb-4 pt-3 border-top">
+    <div class="row">
+      <div class="col-sm-8">
+        <p class="text-muted small">
+          © Weiyu Liu.
+        </p>
+      </div>
+      <div class="col-sm-4 text-sm-end">
+        <p class="text-muted small">
+          Last updated: <span id="lastUpdated"></span>
+        </p>
+      </div>
+    </div>
+    <script>
+      // Display the last modified date of the page
+      document.getElementById('lastUpdated').textContent = 
+        new Date(document.lastModified).toLocaleDateString('en-US', {
+          year: 'numeric', 
+          month: 'long', 
+          day: 'numeric'
+        });
+    </script>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // ===== Publication filtering functions =====
+    function filterPubs(category) {
+      const publications = document.querySelectorAll('.publication');
+      const pubContainer = document.getElementById('pubs');
+      
+      // Update active filter styling
+      document.getElementById('filter-selected').classList.remove('active-filter');
+      document.getElementById('filter-date').classList.remove('active-filter');
+      document.getElementById(`filter-${category}`).classList.add('active-filter');
+      
+      // Store original publications if not already stored
+      if (!window.originalPublications) {
+        window.originalPublications = Array.from(publications);
+      }
+
+      if (category === 'date') {
+        pubContainer.innerHTML = '';
+        const years = {};
+        const before2018 = [];
+        
+        // Group publications by year
+        window.originalPublications.forEach(pub => {
+          const year = pub.getAttribute('data-date');
+          if (parseInt(year) <= 2018) {
+            before2018.push(pub.cloneNode(true));
+          } else {
+            if (!years[year]) years[year] = [];
+            years[year].push(pub.cloneNode(true));
+          }
+        });
+        
+        // Sort years in descending order, but excluding before2019
+        const sortedYears = Object.keys(years).sort((a, b) => b - a);
+        
+        // Create year groups
+        sortedYears.forEach(year => {
+          const yearGroup = document.createElement('div');
+          yearGroup.classList.add('year-group');
+          yearGroup.id = `year-${year}`;
+          yearGroup.innerHTML = `<b>${year}</b><hr>`;
+          pubContainer.appendChild(yearGroup);
+          
+          years[year].forEach(pub => {
+            pub.style.display = 'block';
+            pubContainer.appendChild(pub);
+          });
+        });
+        
+        // Add "Before 2019" group if there are any papers
+        if (before2018.length > 0) {
+          const beforeGroup = document.createElement('div');
+          beforeGroup.classList.add('year-group');
+          beforeGroup.id = 'year-before2018';
+          beforeGroup.innerHTML = `<b>Before 2018</b><hr>`;
+          pubContainer.appendChild(beforeGroup);
+          
+          before2018.sort((a, b) => b.getAttribute('data-date') - a.getAttribute('data-date'));
+          before2018.forEach(pub => {
+            pub.style.display = 'block';
+            pubContainer.appendChild(pub);
+          });
+        }
+        
+        // Setup BibTeX links again after DOM changes
+        setupBibTexLinks();
+        return;
+      }
+
+      // 'selected' or any other default
+      pubContainer.innerHTML = '';
+      
+      // Add Selected heading with horizontal rule for selected view
+      if (category === 'selected') {
+        const selectedGroup = document.createElement('div');
+        selectedGroup.classList.add('selected-group');
+        selectedGroup.innerHTML = `<b>Selected</b><hr>`;
+        pubContainer.appendChild(selectedGroup);
+      }
+      
+      window.originalPublications.forEach(pub => {
+        const pubClone = pub.cloneNode(true);
+        if (pub.classList.contains(category)) {
+          pubClone.style.display = 'block';
+        } else {
+          pubClone.style.display = 'none';
+        }
+        pubContainer.appendChild(pubClone);
+      });
+      
+      // Setup BibTeX links again after DOM changes
+      setupBibTexLinks();
+    }
+
+    // ===== Scroll to year =====
+    function scrollToYear(year) {
+      // Filter first
+      filterPubs('date');
+      
+      // Use setTimeout to ensure elements are created before scrolling
+      setTimeout(() => {
+        const yearElement = document.getElementById(`year-${year}`);
+        if (yearElement) {
+          const navHeight = document.querySelector('.navbar').offsetHeight;
+          const elementPosition = yearElement.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+            top: elementPosition - navHeight - 20,
+            behavior: 'smooth'
+          });
+        }
+      }, 100); // Short delay to ensure DOM is updated
+    }
+
+    // ===== Initialize on load =====
+    document.addEventListener('DOMContentLoaded', () => {
+      filterPubs('selected');
+      
+      // News section toggle button text change
+      const newsCollapse = document.getElementById('collapseNews');
+      const newsToggle = document.getElementById('newsToggle');
+      
+      newsCollapse.addEventListener('show.bs.collapse', function () {
+        newsToggle.innerHTML = 'Click here to read less <i class="fas fa-chevron-up fa-xs"></i>';
+      });
+      
+      newsCollapse.addEventListener('hide.bs.collapse', function () {
+        newsToggle.innerHTML = 'Click here to read more <i class="fas fa-chevron-down fa-xs"></i>';
+      });
+      
+      // Recruitment section toggle button text change
+      const recruitmentCollapse = document.getElementById('collapseRecruitment');
+      const recruitmentToggle = document.getElementById('recruitmentToggle');
+      
+      recruitmentCollapse.addEventListener('show.bs.collapse', function () {
+        recruitmentToggle.innerHTML = 'Click here to read less <i class="fas fa-chevron-up fa-xs"></i>';
+      });
+      
+      recruitmentCollapse.addEventListener('hide.bs.collapse', function () {
+        recruitmentToggle.innerHTML = 'Click here to read more <i class="fas fa-chevron-down fa-xs"></i>';
+      });
+      
+      // Setup BibTeX links
+      setupBibTexLinks();
+      
+      // Close navbar when clicking a nav link in mobile view
+      const navLinks = document.querySelectorAll('.navbar-nav a');
+      const navbarCollapse = document.getElementById('navbarNav');
+      const bsNavbarCollapse = new bootstrap.Collapse(navbarCollapse, {toggle: false});
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 576) { // sm breakpoint in Bootstrap is 576px
+            bsNavbarCollapse.hide();
+          }
+        });
+      });
+    });
+
+    // ===== BibTeX handling =====
+    function setupBibTexLinks() {
+      // Find all bibtex links
+      document.querySelectorAll('a[href^="data/"][href$=".bib"]').forEach(link => {
+        const bibPath = link.getAttribute('href');
+        const pubContainer = link.closest('.publication');
+        const collapseId = 'collapse-' + bibPath.replace(/[\/\.]/g, '-');
+        const toggleId = 'toggle-' + bibPath.replace(/[\/\.]/g, '-');
+        
+        // Create collapse container if it doesn't exist
+        if (!document.getElementById(collapseId)) {
+          // Replace the link with a toggle and add a collapse div
+          const colDiv = document.createElement('div');
+          colDiv.classList.add('collapse');
+          colDiv.id = collapseId;
+          colDiv.innerHTML = '<div class="bibtex-content">Loading...</div>';
+          
+          // Insert the collapse div after the paragraph containing the link
+          const paragraph = link.closest('p');
+          paragraph.parentNode.insertBefore(colDiv, paragraph.nextSibling);
+          
+          // Change the link to a toggle button
+          link.setAttribute('data-bs-toggle', 'collapse');
+          link.setAttribute('href', '#' + collapseId);
+          link.setAttribute('role', 'button');
+          link.setAttribute('aria-expanded', 'false');
+          link.setAttribute('aria-controls', collapseId);
+          link.id = toggleId;
+          
+          // Add collapse event listeners
+          const collapse = new bootstrap.Collapse(colDiv, { toggle: false });
+          
+          colDiv.addEventListener('show.bs.collapse', function() {
+            // Load BibTeX content when expanding
+            fetch(bibPath)
+              .then(response => response.text())
+              .then(data => {
+                // Escape HTML entities to display BibTeX properly
+                const escaped = data
+                  .replace(/&/g, '&amp;')
+                  .replace(/</g, '&lt;')
+                  .replace(/>/g, '&gt;')
+                  .replace(/"/g, '&quot;')
+                  .replace(/'/g, '&#039;');
+                colDiv.querySelector('.bibtex-content').innerHTML = escaped;
+              })
+              .catch(error => {
+                colDiv.querySelector('.bibtex-content').textContent = 'Error loading BibTeX: ' + error;
+              });
+            
+            // Change link text
+            link.innerHTML = 'hide bibtex';
+          });
+          
+          colDiv.addEventListener('hide.bs.collapse', function() {
+            // Change link text back
+            link.innerHTML = 'bibtex';
+          });
+        }
+      });
+    }
+
+    // ===== Smooth scrolling for navbar links =====
+    document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const navHeight = document.querySelector('.navbar').offsetHeight;
+        
+        // Handle collapsing navbar in mobile view
+        if (window.innerWidth < 576) {
+          const navbarCollapse = document.getElementById('navbarNav');
+          const bsNavbarCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
+          
+          // Collapse navbar then scroll after a slight delay
+          bsNavbarCollapse.hide();
+          
+          // Wait for navbar collapse animation to complete before scrolling
+          setTimeout(() => {
+            if (targetId === '#Home') {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+              const targetElement = document.querySelector(targetId);
+              if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                  top: elementPosition - navHeight + 240,
+                  behavior: 'smooth'
+                });
+              }
+            }
+          }, 0); // Bootstrap collapse transition is typically 300ms
+        } else {
+          // Default behavior for larger screens
+          if (targetId === '#Home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+              window.scrollTo({
+                top: elementPosition - navHeight,
+                behavior: 'smooth'
+              });
+            }
+          }
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>

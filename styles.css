@@ -1,0 +1,334 @@
+/* 
+  FONT-FACE: 
+  Consolidates your original Google Lato font import rules 
+  (kept as-is), so you can still self-host or direct-load them.
+*/
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), 
+       url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, 
+                 U+2020, U+20A0-20AB, U+20AD-20CF, 
+                 U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), 
+       url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, 
+                 U+02BB-02BC, U+02C6, U+02DA, U+02DC, 
+                 U+2000-206F, U+2074, U+20AC, U+2122, 
+                 U+2191, U+2193, U+2212, U+2215, 
+                 U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), 
+       url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, 
+                 U+2020, U+20A0-20AB, U+20AD-20CF, 
+                 U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), 
+       url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, 
+                 U+02BB-02BC, U+02C6, U+02DA, U+02DC, 
+                 U+2000-206F, U+2074, U+20AC, U+2122, 
+                 U+2191, U+2193, U+2212, U+2215, 
+                 U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), 
+       url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, 
+                 U+2020, U+20A0-20AB, U+20AD-20CF, 
+                 U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), 
+       url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, 
+                 U+02BB-02BC, U+02C6, U+02DA, U+02DC, 
+                 U+2000-206F, U+2074, U+20AC, U+2122, 
+                 U+2191, U+2193, U+2212, U+2215, 
+                 U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), 
+       url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, 
+                 U+2020, U+20A0-20AB, U+20AD-20CF, 
+                 U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), 
+       url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, 
+                 U+02BB-02BC, U+02C6, U+02DA, U+02DC, 
+                 U+2000-206F, U+2074, U+20AC, U+2122, 
+                 U+2191, U+2193, U+2212, U+2215, 
+                 U+FEFF, U+FFFD;
+}
+
+/* Global link styling */
+a {
+  color: #2C4282; /* Enhanced navy blue for better contrast with text */
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: #BF967E; /* Pale Taupe for hover state */
+  text-decoration: none;
+}
+
+/* Global text styling */
+body,
+td,
+th,
+tr,
+p {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333333; /* Soft black for text */
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  color: #333333; /* Soft black for headings */
+  font-weight: 600;
+}
+
+/* Custom styles moved from HTML */
+.container {
+  max-width: 900px;
+}
+
+/* Add space between year and topic sections */
+.year-group, .topic-group, .selected-group {
+  margin-top: 15px;
+}
+
+/* Add smaller spacing between publications within a section */
+.publication {
+  margin-bottom: 20px;
+}
+
+/* Style horizontal rules */
+.year-group hr, .topic-group hr, .selected-group hr {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 0;
+  border-top: 1px solid #BF967E; /* Pale Taupe for horizontal rules */
+}
+
+/* Style for the active filter option */
+.active-filter {
+  color: #BF967E; /* Pale Taupe for active filter */
+}
+
+/* Style for paper titles
+.paper-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+} */
+
+/* Navbar link hover style */
+.nav-link:hover {
+  color: #BF967E !important; /* Pale Taupe for navbar link hover */
+}
+
+/* Remove border from navbar toggler button */
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+  padding-left: 0;
+}
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+  color: #BF967E; /* Pale Taupe for toggler focus/active */
+}
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Custom navbar-toggler with two lines that transforms to X */
+.navbar-toggler {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s ease;
+}
+
+.navbar-toggler .line {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 22px;
+  background-color: #2C4282; /* Enhanced navy blue for toggler lines */
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler .line:nth-child(1) {
+  top: 14px;
+}
+
+.navbar-toggler .line:nth-child(2) {
+  top: 24px;
+}
+
+.navbar-toggler:hover .line {
+  background-color: #BF967E; /* Pale Taupe for toggler hover */
+}
+
+.navbar-toggler.collapsed .line:nth-child(1) {
+  transform: rotate(0);
+  top: 14px;
+}
+
+.navbar-toggler.collapsed .line:nth-child(2) {
+  transform: rotate(0);
+  top: 24px;
+}
+
+.navbar-toggler:not(.collapsed) .line {
+  background-color: #BF967E; /* Pale Taupe for toggler not collapsed */
+}
+
+.navbar-toggler:not(.collapsed) .line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 19px;
+  width: 26px;
+}
+
+.navbar-toggler:not(.collapsed) .line:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 19px;
+  width: 18px;
+}
+
+/* Highlight text style - bold and Georgia Tech red */
+.highlight-text {
+  font-weight: bold;
+  color: #BE0000; /* Pale Taupe for highlighted text */
+}
+
+/* BibTeX display */
+.bibtex-content {
+  background-color: #F2EEEB; /* Snowy Mount for bibtex background */
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 9px;
+  white-space: pre-wrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 1px solid #BF967E; /* Pale Taupe for bibtex border */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.collapse:not(.show) .bibtex-content {
+  opacity: 0;
+}
+
+.collapse.show .bibtex-content {
+  opacity: 1;
+}
+
+/* Remove left margin/padding from lists to align with left edge */
+#Mentoring ul, #Service ul, #Group ul {
+  padding-left: 1em;
+  margin-top: 0; /* Remove top margin to match paragraph spacing */
+}
+
+/* Add proper indentation for nested lists */
+#Mentoring ul ul, #Service ul ul, #Group ul ul {
+  padding-left: 1em;
+}
+
+/* Ensure consistent spacing between sections */
+#Mentoring p, #Service p {
+  margin-bottom: 0; /* Remove bottom margin from paragraph wrapper */
+}
+
+/* Remove space between paragraph and bullet list in Group section */
+#Group .card-body > p + ul {
+  margin-top: -1em;
+}
+
+/* News section styles */
+#newsList, #moreNewsList {
+  padding-left: 1em;
+  margin-bottom: 0em;
+}
+
+/* Ensure container alignment is consistent */
+.navbar-nav {
+  padding-left: 0;
+  margin-left: 0px;
+}
+
+/* New styles for the navbar */
+.bg-light {
+  background-color: #F2EEEB !important; /* Snowy Mount for navbar background */
+}
+
+.navbar {
+  border-bottom: none; /* Removed border */
+}
+
+/* Additional styling for filter links */
+.filter-options a {
+  transition: color 0.2s ease;
+}
+
+.filter-options a:hover {
+  color: #BF967E; /* Pale Taupe for filter links hover */
+}
+
+/* Card styling for recruitment section */
+.card {
+  background-color: #F2EEEB; /* Snowy Mount for card background */
+  border: 1px solid #BF967E; /* Pale Taupe for card border */
+}
+
+.navbar {
+  border-bottom: 1px solid #BF967E; /* Pale Taupe for navbar border */
+}
