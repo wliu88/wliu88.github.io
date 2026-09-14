@@ -61,6 +61,7 @@
           <h3>Weiyu Liu</h3>
         </div>
         <p>
+          I am an incoming Presidential Young Professor in the <a href="https://www.comp.nus.edu.sg/">School of Computing</a> at the National University of Singapore (NUS).
           I am currently a Member of Technical Staff at <a href="https://www.rhoda.ai/">Rhoda</a>, where I develop video models for decision making and control.
           I was a Postdoctoral Scholar working with 
           <a href="https://jiajunwu.com/">Jiajun Wu</a> in the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab (SVL)</a>.
@@ -133,13 +134,15 @@
     </div>
     <div>
       <ul id="newsList">
+        <li>06/2026 – Served as an Area Chair (AC) for <a href="https://www.corl.org/">CoRL 2026</a></li>
+        <li>03/2026 – Developed <a href="https://youtu.be/i0QiFNChyP0">in-context learning for Direct Video-Action Models</a> at Rhoda</li>
+        <li>06/2025 – Served as an Area Chair (AC) for <a href="https://2025.corl.org/">CoRL 2025</a></li>
         <li>05/2025 – Organized the <a href="https://foundation-models-meet-embodied-agents.github.io/cvpr2025/">CVPR 2025 Workshop on Foundation Models for Embodied Agents</a></li>
-        <li>04/2025 – Gave a guest lecture in CS 8001: Robotics and Human-Robot Interaction at Georgia Tech</li>
-        <li>03/2025 – Served as an Area Chair (AC) for <a href="https://www.corl.org/">CoRL 2025</a></li>
-        <li>02/2025 – Gave a guest lecture in <a href="https://limanling.github.io/teaching/cs396-reasoning-planning/">CS 396: Reasoning and Planning in the Foundation Model Era</a> at Northwestern University</li>
       </ul>
       <div class="collapse" id="collapseNews">
         <ul id="moreNewsList">
+          <li>04/2025 – Gave a guest lecture in CS 8001: Robotics and Human-Robot Interaction at Georgia Tech</li>
+          <li>02/2025 – Gave a guest lecture in <a href="https://limanling.github.io/teaching/cs396-reasoning-planning/">CS 396: Reasoning and Planning in the Foundation Model Era</a> at Northwestern University</li>
           <li>10/2024 – Gave an oral presentation at the <a href="https://leap-workshop.github.io/">LEAP Workshop</a> at CoRL 2024</li>
           <li>06/2024 – Organized the <a href="https://vlmnm-workshop.github.io/">ICRA 2024 Workshop on Vision-Language Models for Navigation and Manipulation</a></li>
           <li>01/2023 – Gave an invited talk at the <a href="https://interact.berkeley.edu/">InterACT Lab</a> at UC Berkeley</li>
@@ -155,12 +158,12 @@
     </div>
   </div>
 
-  <!-- <div class="container pt-4" id="Group">
+  <div class="container pt-4" id="Group">
     <div class="text-sm-start">
       <h5>Group</h5>
     </div>
     <p>
-      <span class="highlight-text">I am looking for motivated and talented students to join my research group in Fall 2026.</span>
+      <span class="highlight-text">I am looking for motivated and talented students to join my research group at NUS in 2027.</span>
       <br>
       <a data-bs-toggle="collapse" href="#collapseRecruitment" role="button" aria-expanded="false" aria-controls="collapseRecruitment" class="text-decoration-none" id="recruitmentToggle">
          Click here to read more <i class="fas fa-chevron-down fa-xs"></i>
@@ -178,7 +181,7 @@
         <p>I encourage students to publish one paper each year, something you are genuinely proud to share. Alongside the paper, we release code, datasets, project websites, and other materials to help the community build on our work.</p>
         
         <b>Mentorship and Advising</b>
-        <p>I will schedule recurring meetings with all group members and make it a priority to meet individually with each PhD student every week. We also hold regular lab meetings / reading groups to share ideas and learn from one another. I believe strong research comes from a supportive, honest, and intellectually open environment.</p>
+        <p>I will schedule recurring meetings with all group members and make it a priority to meet individually with each PhD student every week. We also hold regular lab meetings and reading groups to share ideas and learn from one another. I believe strong research comes from a supportive, honest, and intellectually open environment.</p>
         <p>For <span class="highlight-text">research</span>, I will support your growth in identifying meaningful questions, developing solutions, writing, sharing work, managing projects, giving and receiving constructive feedback, and shaping a strong research narrative over time.</p>
         <p>For <span class="highlight-text">your career</span>, I will provide advice on finding internships, building your network, mentoring junior students, and preparing for academic or industry jobs.</p>
         <p>For <span class="highlight-text">personal growth</span> beyond research, I encourage you to balance work and life, travel (for example, by attending international conferences), and continue developing your interests and hobbies.</p>
@@ -187,15 +190,15 @@
         <p>I will work to secure funding to support PhD students. Students will have access to high-performance compute resources, robot hardware, personal computers, and travel support for attending conferences.</p>
         
         <b>What I'm Looking For</b>
-        <p>I'm looking for students who are excited in the research directions we pursue. Ideal candidates:</p>
+        <p>I'm looking for students who are excited about the research directions we pursue. Ideal candidates:</p>
         <ul>
-          <li>Have prior research experience in robot learning, manipulation, task and motion planning, or related fields such as AI, machine learning, computer vision, NLP</li>
+          <li>Have prior research experience in robot learning, manipulation, task and motion planning, or related fields such as AI, machine learning, computer vision, and NLP</li>
           <li>Think deeply and communicate clearly</li>
           <li>Have strong coding and hands-on skills</li>
           <li>Are self-driven</li>
         </ul>
       </div>
-    </div> -->
+    </div>
 
     <!-- <b style="margin-bottom: 5px; display: block;">PhD Students</b> -->
     <!-- <div class="row gy-4 align-items-top"> -->
@@ -259,6 +262,8 @@
          <a href="#" onclick="filterPubs('date'); return false;" id="filter-date">Show By Date</a>
       <br>
         Years:
+        <a href="#" onclick="scrollToYear('2026'); return false;">2026</a> /
+        <a href="#" onclick="scrollToYear('2025'); return false;">2025</a> /
         <a href="#" onclick="scrollToYear('2024'); return false;">2024</a> /
         <a href="#" onclick="scrollToYear('2023'); return false;">2023</a> /
         <a href="#" onclick="scrollToYear('2022'); return false;">2022</a> /
@@ -269,6 +274,254 @@
     </div>
 
     <div id="pubs">
+      <!-- STACK -->
+      <div class="publication selected" data-date="2026" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/stack.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              STACK: Learning Composable Skills by Discovering Spatial and Temporal Structure with Foundation Models
+            </b>
+            <p>
+              <a href="https://www.neilnie.com/">Neil Nie</a>,
+              <a href="https://wenlong.page/">Wenlong Huang</a>,
+              <a href="https://jiayuanm.com/">Jiayuan Mao</a>,
+              <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>,
+              <strong>Weiyu Liu<sup>†</sup></strong>,
+              <a href="https://jiajunwu.com/">Jiajun Wu<sup>†</sup></a>
+              <br>
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+              <br>
+              <a href="https://icra-stack.github.io/STACK.pdf">paper</a> /
+              <a href="https://icra-stack.github.io/">website</a> /
+              <a href="data/stack.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DVA -->
+      <div class="publication selected" data-date="2026" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/dva.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Causal Video Models Are Data-Efficient Robot Policy Learners
+            </b>
+            <p>
+              Rhoda AI Team (including <strong>Weiyu Liu</strong>)
+              <br>
+              <em>Rhoda AI Blog</em>, 2026
+              <br>
+              <a href="https://www.rhoda.ai/research/direct-video-action">blog</a> /
+              <a href="data/dva.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- APIVOT -->
+      <div class="publication" data-date="2026" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/apivot.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              APIVOT: Adaptive Planning with Interleaved Vision-Language Thoughts
+            </b>
+            <p>
+              <a href="https://emilyzjin.github.io/">Emily Jin</a>,
+              <a href="https://stanford.edu/~joycj/">Joy Hsu</a>,
+              <a href="https://eeching.github.io/">Yiqing Xu</a>,
+              <strong>Weiyu Liu<sup>†</sup></strong>,
+              <a href="https://www.autonomousagents.stanford.edu/people">Nick Haber<sup>†</sup></a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu<sup>†</sup></a>
+              <br>
+              <em>arXiv preprint</em>, 2026
+              <br>
+              <a href="https://arxiv.org/abs/2607.08024">arxiv</a> /
+              <a href="https://emilyzjin.github.io/projects/apivot.html">website</a> /
+              <a href="https://github.com/emilyzjin/adaptive_planning">code</a> /
+              <a href="data/apivot.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENACT -->
+      <div class="publication" data-date="2026" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/enact.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              ENACT: Evaluating Embodied Cognition with World Modeling of Egocentric Interaction
+            </b>
+            <p>
+              <a href="https://qinengwang-aiden.github.io/">Qineng Wang*</a>,
+              <a href="https://wenlong.page/">Wenlong Huang*</a>,
+              <a href="https://yu-bryan-zhou.github.io/">Yu Zhou</a>,
+              <a href="https://hang-yin.github.io/">Hang Yin</a>,
+              <a href="https://www.linkedin.com/in/tianwei-bao-625b67232/">Tianwei Bao</a>,
+              <a href="https://www.linkedin.com/in/jianwen-lyu-ba9a11329/">Jianwen Lyu</a>,
+              <strong>Weiyu Liu</strong>,
+              <a href="https://ai.stanford.edu/~zharu/">Ruohan Zhang<sup>†</sup></a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu<sup>†</sup></a>,
+              <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei<sup>†</sup></a>,
+              <a href="https://limanling.github.io/">Manling Li<sup>†</sup></a>
+              <br>
+              <em>International Conference on Learning Representations (ICLR)</em>, 2026
+              <br>
+              <em>ICLR Workshop on World Models: Understanding, Modelling and Scaling</em>, 2026 <span class="highlight-text">(Outstanding Paper Award)</span>
+              <br>
+              <em>ICLR Workshop on Lifelong Agents: Learning, Aligning, Evolving</em>, 2026 <span class="highlight-text">(Outstanding Paper Award)</span>
+              <br>
+              <em>ICLR Workshop on Multimodal Intelligence: Next Token Prediction and Beyond</em>, 2026
+              <br>
+              <em>NeurIPS Workshop on Bridging Language, Agent, and World Models (LAW)</em>, 2025 <span class="highlight-text">(Spotlight Presentation)</span>
+              <br>
+              <a href="https://arxiv.org/abs/2511.20937">arxiv</a> /
+              <a href="https://enact-embodied-cognition.github.io/">website</a> /
+              <a href="https://github.com/mll-lab-nu/ENACT">code</a> /
+              <a href="https://huggingface.co/datasets/MLL-Lab/ENACT">data</a> /
+              <a href="data/enact.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MoMaGen -->
+      <div class="publication" data-date="2026" data-topic="action">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/momagen.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation
+            </b>
+            <p>
+              <a href="https://www.chengshuli.me/">Chengshu Li*</a>,
+              <a href="https://mxu34.github.io/">Mengdi Xu*</a>,
+              <a href="https://arpitrf.github.io/">Arpit Bahety*</a>,
+              <a href="https://hang-yin.github.io/">Hang Yin*</a>,
+              <a href="https://yunfanj.com/">Yunfan Jiang</a>,
+              <a href="https://qingh097.github.io/">Huang Huang</a>,
+              <a href="https://www.jowo.me/">Josiah Wong</a>,
+              <a href="https://sujaygarlanka.com/">Sujay Garlanka</a>,
+              <a href="https://www.cemgokmen.com/">Cem Gokmen</a>,
+              <a href="https://ai.stanford.edu/~zharu/">Ruohan Zhang</a>,
+              <strong>Weiyu Liu</strong>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>,
+              <a href="https://robertomartinmartin.com/">Roberto Martín-Martín</a>,
+              <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>
+              <br>
+              <em>International Conference on Learning Representations (ICLR)</em>, 2026
+              <br>
+              <a href="https://arxiv.org/abs/2510.18316">arxiv</a> /
+              <a href="https://momagen.github.io/">website</a> /
+              <a href="https://github.com/ChengshuLi/MoMaGen">code</a> /
+              <a href="https://youtu.be/277GxteBwCQ">video</a> /
+              <a href="data/momagen.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LayoutVLM -->
+      <div class="publication" data-date="2025" data-topic="planning">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <video class="img-fluid rounded border" style="width: 100%; display: block; height: auto;" autoplay muted loop webkit-playsinline playsinline>
+              <source src="images/layoutvlm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-sm-9">
+            <b>
+              LayoutVLM: Differentiable Optimization of 3D Layout via Vision-Language Models
+            </b>
+            <p>
+              <a href="https://sunfanyun.com/">Fan-Yun Sun*</a>,
+              <strong>Weiyu Liu*</strong>,
+              <a href="https://carriegu0818.github.io/">Siyi Gu</a>,
+              <a href="https://www.linkedin.com/in/dylanllim/">Dylan Lim</a>,
+              <a href="https://goutamgmb.github.io/">Goutam Bhat</a>,
+              <a href="https://federicotombari.github.io/">Federico Tombari</a>,
+              <a href="https://limanling.github.io/">Manling Li</a>,
+              <a href="https://www.autonomousagents.stanford.edu/people">Nick Haber</a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>
+              <br>
+              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2025
+              <br>
+              <a href="https://arxiv.org/abs/2412.02193">arxiv</a> /
+              <a href="https://ai.stanford.edu/~sunfanyun/layoutvlm/">website</a> /
+              <a href="https://github.com/sunfanyunn/LayoutVLM">code</a> /
+              <a href="data/layoutvlm.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foundation Models in Robotics -->
+      <div class="publication" data-date="2025" data-topic="commonsense knowledge">
+        <div class="row align-items-center gy-2">
+          <div class="col-sm-3">
+            <img src="images/fmsurvey.png" alt="Foundation Models in Robotics survey figure" class="img-fluid rounded border" style="width: 100%; display: block; height: auto;">
+          </div>
+          <div class="col-sm-9">
+            <b>
+              Foundation Models in Robotics: Applications, Challenges, and the Future
+            </b>
+            <p>
+              <a href="https://sites.google.com/view/royafiroozi/home">Roya Firoozi</a>,
+              <a href="https://scholar.google.com/citations?user=D1OiGH8AAAAJ&hl=en">Johnathan Tucker</a>,
+              <a href="https://s-tian.github.io/">Stephen Tian</a>,
+              <a href="https://irom-lab.princeton.edu/majumdar/">Anirudha Majumdar</a>,
+              <a href="https://web.stanford.edu/~jksun/">Jiankai Sun</a>,
+              <strong>Weiyu Liu</strong>,
+              <a href="https://yukezhu.me/">Yuke Zhu</a>,
+              <a href="https://shurans.github.io/">Shuran Song</a>,
+              <a href="https://scholar.google.com/citations?user=4D1n8scAAAAJ&hl=en">Ashish Kapoor</a>,
+              <a href="https://karolhausman.github.io/">Karol Hausman</a>,
+              <a href="http://brianichter.com/">Brian Ichter</a>,
+              <a href="https://dannydriess.github.io/">Danny Driess</a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>,
+              <a href="https://www.mvig.org/">Cewu Lu</a>,
+              <a href="https://profiles.stanford.edu/mac-schwager/">Mac Schwager</a>
+              <br>
+              <em>The International Journal of Robotics Research (IJRR)</em>, 2025
+              <br>
+              <a href="https://journals.sagepub.com/doi/10.1177/02783649241281508">paper</a> /
+              <a href="https://arxiv.org/abs/2312.07843">arxiv</a> /
+              <a href="https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models">paper list</a> /
+              <a href="data/fmsurvey.bib">bibtex</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- Blade -->
       <div class="publication selected" data-date="2024" data-topic="planning">
         <div class="row align-items-center gy-2">
@@ -280,7 +533,7 @@
           </div>
           <div class="col-sm-9">
             <b>
-              Learning Compositional Behaviors from Demonstration and Language
+              BLADE: Learning Compositional Behaviors from Demonstration and Language
             </b>
             <p>
               <strong>Weiyu Liu*</strong>,
@@ -436,7 +689,7 @@
               <a href="https://shiyu-zhao.netlify.app/">Shiyu Zhao*</a>,
               <a href="https://qinengwang-aiden.github.io/">Qineng Wang*</a>,
               <a href="https://jameskrw.github.io/">Kangrui Wang*</a>,
-              <a href="https://bryanzhou008.github.io/">Yu Zhou*</a>,
+              <a href="https://yu-bryan-zhou.github.io/">Yu Zhou*</a>,
               <a href="https://www.linkedin.com/in/sanjana-srivastava5/">Sanjana Srivastava</a>,
               <a href="https://www.cemgokmen.com/">Cem Gokmen</a>,
               <a href="https://profiles.stanford.edu/tonyhlee">Tony Lee</a>,
